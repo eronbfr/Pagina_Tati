@@ -1,0 +1,10 @@
+show router interface
+show port
+show service sap-using
+show system information
+show card
+show mda
+show router bgp summary
+show router ospf neighbor
+show router mpls lsp
+show log log-id 99
