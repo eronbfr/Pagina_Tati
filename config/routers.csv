@@ -1,0 +1,3 @@
+hostname,ip,username,password
+ROUTER-01,192.168.1.1,admin,admin123
+ROUTER-02,192.168.1.2,admin,admin123
