@@ -1,344 +1,904 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-W2JS8PE7WV"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Tati Portela | Personal Trainer em Curitiba – Musculação, Yoga, Pilates e Protocolo GLP-1</title>
+  <meta name="description" content="Personal Trainer em Curitiba (CREF 022922-G/PR) com mais de 16 anos de experiência. Treino personalizado, Yoga, Pilates, Massoterapia e Protocolo GLP-1. Agende sua avaliação.">
+  <link rel="canonical" href="https://personaltatiportela.com.br/">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#17111b">
+  <meta name="color-scheme" content="light dark">
+  <meta name="format-detection" content="telephone=no">
 
-  gtag('config', 'G-W2JS8PE7WV');
-</script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-    <meta name="theme-color" content="#FF6B6B">
-    <meta name="description" content="Bem-vindo ao universo Tati Portela - Personal Trainer especialista em transformação física, Yoga, Pilates, Massoterapia e Protocolo GLP-1 (Mounjaro/Ozempic/Wegovy)">
-    <title>Bem-vindo • Tati Portela Personal Trainer</title>
-    <link rel="icon" href="TP_logo.jpeg">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        *, *::before, *::after { margin:0; padding:0; box-sizing: border-box; }
-        html { scroll-behavior: smooth; }
-        body {
-            font-family: 'Poppins', sans-serif;
-            color: #fff;
-            min-height: 100vh;
-            overflow-x: hidden;
-            background: #0a0a14;
-        }
+  <!-- Open Graph / redes sociais -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Tati Portela Personal Trainer">
+  <meta property="og:title" content="Tati Portela | Corpo forte, mente em sintonia">
+  <meta property="og:description" content="Treino personalizado, Yoga, Pilates, Massoterapia e Protocolo GLP-1 em Curitiba. Mais de 16 anos transformando vidas.">
+  <meta property="og:url" content="https://personaltatiportela.com.br/">
+  <meta property="og:image" content="https://personaltatiportela.com.br/assets/img/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Tati Portela, Personal Trainer em Curitiba">
+  <meta name="twitter:card" content="summary_large_image">
 
-        /* Animated gradient background */
-        .bg-stage {
-            position: fixed; inset: 0; z-index: -2;
-            background: linear-gradient(125deg, #FF6B6B 0%, #FF8E53 25%, #6E72FC 60%, #4ECDC4 100%);
-            background-size: 300% 300%;
-            animation: gradMove 14s ease infinite;
-        }
-        @keyframes gradMove {
-            0%,100% { background-position: 0% 50%; }
-            50%     { background-position: 100% 50%; }
-        }
-        .bg-overlay {
-            position: fixed; inset: 0; z-index: -1;
-            background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0.55) 100%);
-        }
+  <!-- Ícones -->
+  <link rel="icon" href="favicon.ico" sizes="32x32">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-        /* Floating fitness icons */
-        .floaters { position: fixed; inset: 0; z-index: 0; pointer-events: none; overflow: hidden; }
-        .floaters i {
-            position: absolute;
-            color: rgba(255,255,255,0.15);
-            font-size: 3rem;
-            animation: floatA 12s ease-in-out infinite;
-        }
-        .floaters i:nth-child(1){ top:8%;  left:6%;  animation-delay:0s;  font-size:4.5rem; }
-        .floaters i:nth-child(2){ top:18%; right:8%; animation-delay:2s;  font-size:3.5rem; }
-        .floaters i:nth-child(3){ bottom:14%; left:10%; animation-delay:4s; font-size:4rem; }
-        .floaters i:nth-child(4){ bottom:22%; right:14%; animation-delay:1s; font-size:3rem; }
-        .floaters i:nth-child(5){ top:50%; left:4%; animation-delay:3s; font-size:2.5rem; }
-        .floaters i:nth-child(6){ top:58%; right:5%; animation-delay:5s; font-size:3.2rem; }
-        .floaters i:nth-child(7){ top:30%; left:46%; animation-delay:6s; font-size:2.2rem; }
-        @keyframes floatA {
-            0%,100%{ transform: translateY(0) rotate(0deg); opacity:0.12; }
-            50%   { transform: translateY(-30px) rotate(15deg); opacity:0.28; }
-        }
+  <!-- Performance -->
+  <link rel="preload" href="assets/fonts/archivo-var-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" as="image" type="image/avif" fetchpriority="high" href="assets/img/tati-boas-vindas-840.avif" imagesrcset="assets/img/tati-boas-vindas-560.avif 560w, assets/img/tati-boas-vindas-840.avif 840w, assets/img/tati-boas-vindas-1120.avif 1120w" imagesizes="(max-width: 960px) min(480px, 92vw), 520px">
+  <link rel="stylesheet" href="assets/css/styles.css?v=20261024">
 
-        /* Main hero */
-        main {
-            position: relative; z-index: 1;
-            min-height: 100vh;
-            display: flex; flex-direction: column;
-            align-items: center; justify-content: center;
-            padding: 60px 24px 40px;
-            text-align: center;
-        }
+  <script>
+    // Tema salvo (evita "piscar") + marca que o JS está ativo
+    (function () {
+      var d = document.documentElement;
+      d.classList.add('js');
+      try {
+        var t = localStorage.getItem('tp-theme');
+        if (t === 'light' || t === 'dark') d.setAttribute('data-theme', t);
+      } catch (e) {}
+    })();
+  </script>
+  <script>
+    // Google Analytics 4 com Consent Mode v2 (LGPD): só mede com cookies após o aceite
+    // e só carrega no domínio oficial, para não misturar visitas de pré-visualização.
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    (function () {
+      var consent = null;
+      try { consent = localStorage.getItem('tp-consent'); } catch (e) {}
+      gtag('consent', 'default', {
+        ad_storage: 'denied',
+        ad_user_data: 'denied',
+        ad_personalization: 'denied',
+        analytics_storage: consent === 'granted' ? 'granted' : 'denied'
+      });
+      if (!/(^|\.)personaltatiportela\.com\.br$/.test(location.hostname)) return;
+      gtag('js', new Date());
+      gtag('config', 'G-W2JS8PE7WV');
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-W2JS8PE7WV';
+      document.head.appendChild(s);
+    })();
+  </script>
 
-        .logo-wrap {
-            width: 110px; height: 110px;
-            border-radius: 50%;
-            overflow: hidden;
-            border: 4px solid rgba(255,255,255,0.4);
-            box-shadow: 0 15px 40px rgba(0,0,0,0.4);
-            margin-bottom: 22px;
-            animation: pulseRing 2.5s ease-in-out infinite;
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://personaltatiportela.com.br/#website",
+        "url": "https://personaltatiportela.com.br/",
+        "name": "Tati Portela Personal Trainer",
+        "inLanguage": "pt-BR",
+        "publisher": { "@id": "https://personaltatiportela.com.br/#studio" }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://personaltatiportela.com.br/#tati",
+        "name": "Tatiana Portela",
+        "alternateName": "Tati Portela",
+        "jobTitle": "Personal Trainer",
+        "description": "Personal Trainer pós-graduada em Fisiologia do Exercício, especialista em Yoga, Pilates e Massoterapia.",
+        "image": "https://personaltatiportela.com.br/assets/img/tati-retrato-800.jpg",
+        "hasCredential": {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "Registro profissional",
+          "name": "CREF 022922-G/PR"
+        },
+        "knowsAbout": ["Musculação", "Emagrecimento", "Hipertrofia", "Treinamento funcional", "Yoga", "Pilates", "Massoterapia", "Fisiologia do Exercício"],
+        "worksFor": { "@id": "https://personaltatiportela.com.br/#studio" },
+        "sameAs": ["https://instagram.com/personal.tatiportela", "https://facebook.com/corpomenteemsintonia"]
+      },
+      {
+        "@type": "HealthClub",
+        "@id": "https://personaltatiportela.com.br/#studio",
+        "name": "Tati Portela Personal Trainer – Studio Corpo e Mente em Sintonia",
+        "url": "https://personaltatiportela.com.br/",
+        "logo": "https://personaltatiportela.com.br/assets/img/icon-512.png",
+        "image": "https://personaltatiportela.com.br/assets/img/og-image.jpg",
+        "telephone": "+55-41-99778-6117",
+        "email": "tati@personaltatiportela.com.br",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Av. República Argentina, 2403, Sala 13 – Água Verde",
+          "addressLocality": "Curitiba",
+          "addressRegion": "PR",
+          "postalCode": "80610-260",
+          "addressCountry": "BR"
+        },
+        "areaServed": { "@type": "City", "name": "Curitiba" },
+        "openingHoursSpecification": [{
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "09:00",
+          "closes": "20:00"
+        }],
+        "founder": { "@id": "https://personaltatiportela.com.br/#tati" },
+        "sameAs": ["https://instagram.com/personal.tatiportela", "https://facebook.com/corpomenteemsintonia"],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Serviços",
+          "itemListElement": [
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Personal Training Individual" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Yoga" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Pilates" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Massoterapia" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Consultoria Online" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Treino em Grupo" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Desafio 90 Dias" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Protocolo de treino para usuários de GLP-1" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Workshops e Palestras" } }
+          ]
         }
-        .logo-wrap img { width: 100%; height: 100%; object-fit: cover; }
-        @keyframes pulseRing {
-            0%,100%{ box-shadow: 0 15px 40px rgba(0,0,0,0.4), 0 0 0 0 rgba(255,255,255,0.5); }
-            50%   { box-shadow: 0 15px 40px rgba(0,0,0,0.4), 0 0 0 18px rgba(255,255,255,0); }
-        }
-
-        .badge-top {
-            display: inline-flex; align-items: center; gap: 8px;
-            padding: 8px 18px;
-            background: rgba(255,255,255,0.18);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border-radius: 50px;
-            border: 1px solid rgba(255,255,255,0.3);
-            font-size: 0.82rem; font-weight: 600;
-            letter-spacing: 0.5px;
-            margin-bottom: 18px;
-            animation: fadeUp 0.8s ease 0.1s both;
-        }
-        .badge-top i { color: #FFE66D; }
-
-        h1.title {
-            font-family: 'Playfair Display', serif;
-            font-weight: 900;
-            font-size: clamp(1.9rem, 7vw, 4.5rem);
-            line-height: 1.1;
-            margin-bottom: 14px;
-            text-shadow: 0 6px 30px rgba(0,0,0,0.35);
-            animation: fadeUp 0.9s ease 0.2s both;
-            padding: 0 8px;
-            word-wrap: break-word;
-        }
-        h1.title em {
-            font-style: italic;
-            background: linear-gradient(90deg, #FFE66D, #fff);
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        .tagline {
-            font-size: clamp(1rem, 2.5vw, 1.35rem);
-            opacity: 0.95;
-            font-weight: 400;
-            max-width: 640px;
-            margin: 0 auto 30px;
-            animation: fadeUp 1s ease 0.3s both;
-        }
-
-        @keyframes fadeUp {
-            from { opacity:0; transform: translateY(20px); }
-            to   { opacity:1; transform: translateY(0); }
-        }
-
-        /* Pillars */
-        .pillars {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 14px;
-            max-width: 720px;
-            width: 100%;
-            margin: 10px 0 35px;
-            animation: fadeUp 1.1s ease 0.4s both;
-        }
-        .pillar {
-            background: rgba(255,255,255,0.13);
-            backdrop-filter: blur(14px);
-            -webkit-backdrop-filter: blur(14px);
-            border: 1px solid rgba(255,255,255,0.22);
-            border-radius: 16px;
-            padding: 18px 10px;
-            transition: transform 0.3s ease, background 0.3s ease;
-        }
-        .pillar:hover {
-            transform: translateY(-6px);
-            background: rgba(255,255,255,0.2);
-        }
-        .pillar i {
-            font-size: 1.8rem; display:block; margin-bottom: 8px;
-            color: #FFE66D;
-        }
-        .pillar span {
-            font-size: 0.82rem; font-weight: 600; display: block;
-        }
-
-        /* CTA buttons */
-        .cta-row {
-            display: flex; gap: 14px; flex-wrap: wrap; justify-content: center;
-            animation: fadeUp 1.2s ease 0.5s both;
-        }
-        .btn {
-            display: inline-flex; align-items: center; gap: 10px;
-            padding: 16px 32px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: 700;
-            font-size: 1rem;
-            transition: transform 0.25s ease, box-shadow 0.25s ease;
-            cursor: pointer;
-            border: none;
-            font-family: inherit;
-        }
-        .btn-primary {
-            background: #fff;
-            color: #FF6B6B;
-            box-shadow: 0 12px 30px rgba(0,0,0,0.25);
-        }
-        .btn-primary:hover { transform: translateY(-4px); box-shadow: 0 18px 40px rgba(0,0,0,0.35); }
-        .btn-whatsapp {
-            background: #25D366;
-            color: #fff;
-            box-shadow: 0 12px 30px rgba(37,211,102,0.4);
-        }
-        .btn-whatsapp:hover { transform: translateY(-4px); box-shadow: 0 18px 40px rgba(37,211,102,0.55); }
-        .btn-ghost {
-            background: rgba(255,255,255,0.15);
-            color: #fff;
-            border: 2px solid rgba(255,255,255,0.4);
-            backdrop-filter: blur(10px);
-        }
-        .btn-ghost:hover { background: rgba(255,255,255,0.25); transform: translateY(-4px); }
-
-        /* Stats footer */
-        .mini-stats {
-            display: flex; gap: 28px; flex-wrap: wrap; justify-content: center;
-            margin-top: 40px;
-            animation: fadeUp 1.3s ease 0.6s both;
-        }
-        .mini-stats .stat {
-            text-align: center;
-        }
-        .mini-stats .stat strong {
-            display: block;
-            font-family: 'Playfair Display', serif;
-            font-size: 2rem;
-            color: #FFE66D;
-            line-height: 1;
-        }
-        .mini-stats .stat span {
-            font-size: 0.78rem;
-            opacity: 0.85;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .cref-line {
-            margin-top: 26px;
-            font-size: 0.8rem;
-            opacity: 0.75;
-            letter-spacing: 1.5px;
-            text-transform: uppercase;
-        }
-
-        /* Scroll indicator */
-        .scroll-hint {
-            position: absolute; bottom: 18px; left: 50%; transform: translateX(-50%);
-            font-size: 0.72rem; opacity: 0.6; letter-spacing: 2px;
-            text-transform: uppercase;
-            display: flex; flex-direction: column; align-items: center; gap: 6px;
-        }
-        .scroll-hint i { animation: bounce 1.6s ease infinite; }
-        @keyframes bounce {
-            0%,100%{ transform: translateY(0); }
-            50%   { transform: translateY(6px); }
-        }
-
-        /* Mobile */
-        @media (max-width: 768px) {
-            .floaters i { font-size: 2rem !important; }
-            .floaters i:nth-child(1){ font-size: 2.8rem !important; }
-            .floaters i:nth-child(3){ font-size: 2.5rem !important; }
-        }
-        @media (max-width: 600px) {
-            main { padding: 36px 16px 30px; min-height: auto; }
-            .logo-wrap { width: 84px; height: 84px; margin-bottom: 14px; }
-            .badge-top { font-size: 0.68rem; padding: 6px 12px; letter-spacing: 0.2px; }
-            h1.title br { display: none; }
-            h1.title em { white-space: nowrap; }
-            .tagline { font-size: 0.92rem; line-height: 1.55; padding: 0 4px; margin-bottom: 24px; }
-            .pillars { grid-template-columns: repeat(2, 1fr); gap: 10px; max-width: 360px; margin: 4px auto 28px; }
-            .pillar { padding: 14px 6px; }
-            .pillar i { font-size: 1.4rem; margin-bottom: 6px; }
-            .pillar span { font-size: 0.7rem; line-height: 1.2; }
-            .btn { padding: 13px 22px; font-size: 0.88rem; width: 100%; max-width: 320px; justify-content: center; }
-            .cta-row { flex-direction: column; align-items: center; gap: 10px; width: 100%; }
-            .mini-stats { gap: 16px; margin-top: 26px; }
-            .mini-stats .stat strong { font-size: 1.4rem; }
-            .mini-stats .stat span { font-size: 0.65rem; letter-spacing: 0.5px; }
-            .cref-line { font-size: 0.7rem; letter-spacing: 1px; margin-top: 20px; }
-            .scroll-hint { display: none; }
-            /* Reduce floaters on small screens for clarity */
-            .floaters i:nth-child(5),
-            .floaters i:nth-child(7) { display: none; }
-        }
-        @media (max-width: 380px) {
-            h1.title { font-size: 1.7rem; }
-            .tagline { font-size: 0.85rem; }
-            .pillar span { font-size: 0.65rem; }
-        }
-        @media (prefers-reduced-motion: reduce) {
-            .bg-stage, .floaters i, .logo-wrap, .scroll-hint i { animation: none !important; }
-        }
-    </style>
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://personaltatiportela.com.br/#faq",
+        "mainEntity": [
+          { "@type": "Question", "name": "Onde acontecem as aulas?", "acceptedAnswer": { "@type": "Answer", "text": "No Studio Corpo e Mente em Sintonia, na Av. República Argentina, 2403, sala 13, Água Verde, Curitiba (PR). Também atendo a distância pela Consultoria Online." } },
+          { "@type": "Question", "name": "Nunca treinei ou estou parado há muito tempo. Posso começar?", "acceptedAnswer": { "@type": "Answer", "text": "Pode e deve. Tudo começa com uma avaliação física completa, e o programa é montado a partir do seu nível atual, com progressão segura." } },
+          { "@type": "Question", "name": "Como funciona a avaliação física?", "acceptedAnswer": { "@type": "Answer", "text": "Fazemos análise corporal, anamnese e conversamos sobre seus objetivos, rotina e limitações. Com isso, monto um plano personalizado e definimos as reavaliações." } },
+          { "@type": "Question", "name": "Você atende online?", "acceptedAnswer": { "@type": "Answer", "text": "Sim. Na Consultoria Online você recebe planos de treino personalizados, atualizações semanais e suporte por WhatsApp, onde estiver." } },
+          { "@type": "Question", "name": "Quais técnicas de massoterapia você oferece?", "acceptedAnswer": { "@type": "Answer", "text": "Liberação miofascial, massagem com pedras quentes, massagem relaxante e desportiva, moxabustão, Haihua (eletroestimulação), reflexologia e shiatsu." } },
+          { "@type": "Question", "name": "Qual o horário de atendimento e como agendar?", "acceptedAnswer": { "@type": "Answer", "text": "Atendo de segunda a sexta, das 9h às 20h. O agendamento é feito pelo WhatsApp (41) 99778-6117 ou pelo formulário do site." } }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
-    <div class="bg-stage" aria-hidden="true"></div>
-    <div class="bg-overlay" aria-hidden="true"></div>
-    <div class="floaters" aria-hidden="true">
-        <i class="fas fa-dumbbell"></i>
-        <i class="fas fa-fire"></i>
-        <i class="fas fa-heart-pulse"></i>
-        <i class="fas fa-spa"></i>
-        <i class="fas fa-bolt"></i>
-        <i class="fas fa-medal"></i>
-        <i class="fas fa-person-running"></i>
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+  <symbol id="logo" viewBox="0 0 87.8 100.0"><path fill-rule="evenodd" d="M33.9 99.9C33.8 99.8 33.8 99.4 33.9 98.9C34.0 98.7 34.1 98.3 34.2 98.0C34.2 97.8 34.3 97.3 34.4 97.1C34.6 96.5 34.9 95.2 35.0 94.4C35.0 94.1 35.1 93.7 35.2 93.5C35.2 93.2 35.3 92.8 35.4 92.5C35.4 92.1 35.5 91.7 35.6 91.4C35.7 91.0 35.9 90.5 36.5 88.1C36.6 87.6 36.7 87.0 36.8 86.7C36.9 86.4 37.0 86.0 37.1 85.7C37.4 84.2 37.6 83.1 37.7 82.9C37.7 82.6 38.1 80.8 38.3 79.9C38.7 78.5 39.0 77.1 39.1 76.9C39.1 76.8 39.2 76.5 39.2 76.4C39.5 75.5 39.7 74.2 39.5 74.0C39.3 73.8 38.7 73.5 38.1 73.2C37.2 72.9 34.8 71.7 34.4 71.3C34.2 71.3 34.0 71.1 33.8 71.0C33.3 70.7 33.0 70.5 32.6 70.1C32.4 69.9 32.2 69.7 31.9 69.5C31.2 69.2 28.1 66.1 27.7 65.4C27.4 65.0 27.0 64.5 26.7 64.0C26.3 63.5 25.8 62.8 25.6 62.2C25.4 61.9 25.1 61.4 25.0 61.1C24.5 60.2 23.7 58.0 23.6 57.3C23.6 56.8 23.4 56.1 23.1 55.5C23.0 55.1 22.9 55.0 22.9 54.3C22.9 53.9 22.9 53.5 22.9 53.4C22.8 53.3 22.8 52.9 22.8 52.5C22.8 52.0 22.7 51.8 22.7 51.6C22.6 51.4 22.5 50.3 22.5 49.3C22.5 48.8 22.5 48.2 22.5 47.6C22.5 47.4 22.6 47.0 22.6 46.8C22.6 46.6 22.7 46.0 22.7 45.6C22.7 45.2 22.8 44.6 22.8 44.3C22.9 44.0 23.0 43.6 23.0 43.3C23.0 43.1 23.0 42.8 23.1 42.7C23.1 42.6 23.1 42.3 23.2 42.0C23.2 41.4 23.6 39.9 23.8 39.5C23.9 39.2 24.1 38.4 24.1 38.0C24.1 37.8 24.2 37.4 24.4 37.0C24.5 36.6 24.6 36.2 24.7 36.0C24.8 35.6 24.9 35.4 25.3 34.8C25.5 34.4 25.7 34.1 25.7 34.1C25.7 34.0 26.3 33.0 26.7 32.5C26.8 32.3 27.1 31.9 27.2 31.6C27.6 30.9 27.9 30.4 28.3 30.1C28.4 29.9 28.7 29.6 28.8 29.4C28.9 29.2 29.1 28.9 29.2 28.7C29.8 27.7 29.5 27.2 28.2 27.2C27.9 27.2 27.5 27.2 27.3 27.1C26.9 27.0 26.7 27.0 26.0 27.1C25.6 27.1 24.1 27.1 22.8 27.1C21.4 27.1 20.2 27.1 20.1 27.2C20.0 27.2 19.4 27.1 18.8 27.1C18.2 27.1 17.5 27.1 17.2 27.1C17.0 27.1 16.6 27.1 16.3 27.0C16.0 27.0 15.8 27.0 15.4 27.0C15.1 27.1 14.3 27.1 13.3 27.1C12.5 27.1 10.5 27.1 8.9 27.1C7.2 27.1 6.0 27.1 5.7 27.0C5.4 27.0 4.9 27.0 3.9 27.0C1.9 27.1 1.1 27.1 0.5 26.8C-0.0 26.6 -0.1 26.6 0.2 26.4C0.4 26.3 0.6 26.1 0.7 26.0C0.9 25.8 1.9 25.2 2.5 24.9C2.7 24.8 3.0 24.6 3.1 24.5C3.3 24.5 3.7 24.2 4.0 24.1C4.2 24.0 4.7 23.7 5.0 23.5C5.3 23.4 5.8 23.1 6.1 23.0C6.4 22.8 6.8 22.6 7.0 22.4C7.9 21.9 8.9 21.7 10.7 21.6C11.4 21.6 12.0 21.5 12.3 21.5C12.5 21.4 12.9 21.4 13.6 21.4C14.8 21.4 18.9 21.4 19.0 21.5C19.0 21.5 19.6 21.5 20.3 21.5C21.1 21.4 22.0 21.4 22.8 21.5C23.5 21.5 24.3 21.5 24.7 21.5C25.0 21.5 25.6 21.6 25.9 21.6C26.3 21.6 26.7 21.6 26.9 21.7C27.2 21.8 27.4 21.8 27.8 21.8C29.8 21.7 32.6 21.8 33.0 21.8C33.3 21.9 34.0 22.0 34.8 22.0C35.6 22.0 36.5 22.1 36.9 22.2C37.6 22.3 38.2 22.3 40.3 22.3C40.4 22.3 40.6 22.3 40.8 22.4C41.2 22.5 41.4 22.5 42.4 22.4C43.9 22.4 43.5 22.4 46.4 22.4C48.4 22.5 48.9 22.5 49.2 22.5C49.7 22.7 54.1 22.8 54.7 22.7C54.9 22.7 55.2 22.7 55.5 22.7C55.7 22.7 56.0 22.7 56.2 22.7C56.3 22.7 56.7 22.8 57.0 22.9C57.5 23.0 57.6 23.0 58.1 23.0C59.5 22.9 65.3 22.9 66.6 23.0C66.9 23.0 67.1 23.0 67.2 23.0C67.2 23.0 67.7 23.0 68.3 23.0C69.0 23.0 69.5 22.9 69.8 22.9C70.2 22.8 70.6 22.8 72.0 22.8C73.5 22.8 73.9 22.7 74.2 22.7C74.6 22.6 74.7 22.6 75.1 22.6C75.6 22.7 75.6 22.7 76.4 22.5C77.1 22.4 77.7 22.3 78.0 22.4C78.1 22.4 78.4 22.4 78.7 22.3C79.0 22.3 79.4 22.2 79.7 22.1C80.0 22.1 80.4 22.1 80.8 22.0C82.2 21.8 82.4 22.0 81.3 22.5C81.0 22.7 80.6 22.9 80.4 23.0C79.9 23.4 79.6 23.5 78.8 23.7C78.3 23.9 77.9 24.0 77.7 24.1C77.2 24.4 77.1 24.5 76.7 24.5C76.4 24.5 74.2 25.2 73.7 25.5C73.5 25.5 73.1 25.7 71.7 25.9C71.3 26.0 70.8 26.1 70.6 26.2C70.4 26.3 70.1 26.3 70.1 26.3C69.9 26.3 68.3 26.6 68.2 26.7C68.2 26.7 67.8 26.7 67.4 26.7C66.5 26.8 65.3 26.9 64.9 27.1C64.7 27.1 64.4 27.2 64.1 27.2C63.8 27.2 63.3 27.2 63.0 27.2C62.4 27.3 59.9 27.4 59.1 27.4C57.1 27.3 57.2 27.3 56.6 27.5C56.1 27.6 56.1 27.6 55.2 27.6C54.7 27.5 53.7 27.5 53.0 27.5C52.0 27.5 49.7 27.4 48.9 27.4C48.8 27.4 48.3 27.4 47.8 27.5C47.3 27.5 46.8 27.5 46.7 27.5C46.5 27.5 45.5 27.4 42.9 27.4C41.0 27.4 39.6 27.5 39.3 27.7C39.2 27.8 38.9 27.9 38.6 28.1C38.4 28.2 38.1 28.4 37.9 28.6C37.7 28.7 37.4 28.9 37.2 29.1C36.7 29.4 35.7 30.3 35.3 30.9C34.7 31.6 34.2 32.2 33.9 32.6C33.8 32.9 33.5 33.2 33.4 33.4C33.2 33.6 33.1 33.9 33.0 34.1C32.9 34.3 32.8 34.5 32.6 34.7C32.3 35.0 32.0 35.7 31.7 36.7C31.6 37.3 31.4 37.9 31.2 38.2C31.0 38.9 30.8 39.6 30.8 40.4C30.7 40.8 30.7 41.2 30.7 41.3C30.6 41.3 30.6 41.7 30.5 42.0C30.5 42.3 30.5 42.5 30.5 42.6C30.3 42.8 30.4 45.8 30.5 46.4C30.7 46.9 30.7 47.0 30.7 47.4C30.6 47.9 30.9 48.9 31.3 49.8C31.4 50.1 31.6 50.5 31.7 50.9C31.8 51.3 31.9 51.8 32.1 52.2C32.2 52.5 32.4 52.8 32.4 52.9C32.5 53.0 32.6 53.2 32.8 53.5C33.0 53.8 33.3 54.2 33.4 54.5C33.6 55.0 33.7 55.3 34.1 55.7C34.2 55.8 34.3 56.1 34.4 56.4C34.5 56.7 34.6 56.8 35.0 57.3C35.3 57.5 35.7 58.0 35.9 58.2C36.2 58.6 36.3 58.7 36.9 59.2C37.0 59.3 37.2 59.6 37.4 59.8C37.6 60.1 38.6 61.1 39.2 61.6C39.4 61.7 39.6 62.0 39.8 62.1C40.4 62.8 41.3 63.3 41.7 63.3C42.2 63.3 42.3 63.2 42.6 61.6C42.7 61.0 42.9 60.1 43.0 59.7C43.1 59.3 43.2 58.8 43.3 58.6C43.3 58.3 43.4 57.9 43.5 57.6C43.5 57.4 43.7 56.8 43.8 56.4C43.9 56.1 44.0 55.5 44.1 55.2C44.2 54.9 44.3 54.2 44.4 53.7C44.5 53.1 44.7 52.3 44.8 52.0C44.9 51.7 45.0 51.2 45.0 50.9C45.1 50.7 45.2 50.2 45.3 49.9C45.4 49.7 45.5 49.1 45.6 48.7C45.7 48.3 45.8 47.8 45.9 47.5C46.1 46.7 45.9 46.3 45.4 46.1C45.1 46.1 43.4 46.1 42.8 46.2C42.5 46.2 41.8 46.3 41.2 46.3C40.3 46.3 39.9 46.3 39.6 46.4C39.4 46.4 39.1 46.5 38.7 46.4C38.0 46.4 36.7 46.5 35.8 46.6C35.1 46.7 33.7 46.7 33.5 46.5C33.3 46.3 33.7 45.9 34.5 45.3C34.8 45.2 35.2 44.9 35.4 44.7C35.6 44.5 36.0 44.2 36.4 43.9C38.4 42.5 38.7 42.2 39.1 41.9C40.5 40.8 43.0 40.2 46.2 40.2C47.3 40.2 47.6 40.1 48.2 40.0C49.0 39.9 49.1 39.9 50.8 39.9C52.4 39.9 52.7 39.9 53.1 39.9C53.5 39.8 54.1 39.8 55.7 39.8C57.4 39.7 57.9 39.7 58.3 39.6C58.8 39.6 59.2 39.6 61.2 39.5C62.9 39.5 63.7 39.5 63.9 39.5C64.1 39.4 64.6 39.4 65.4 39.4C66.0 39.4 67.1 39.4 67.9 39.4C68.8 39.4 69.4 39.4 69.8 39.5C70.1 39.5 70.7 39.6 71.1 39.6C71.8 39.5 71.9 39.6 72.1 39.6C72.4 39.7 73.5 40.1 74.5 40.3C75.3 40.5 77.6 41.5 78.8 42.1C79.2 42.3 79.6 42.4 79.7 42.5C79.9 42.6 80.2 42.8 80.4 43.0C80.6 43.1 80.9 43.4 81.1 43.6C81.4 43.7 81.7 44.0 81.8 44.1C82.0 44.3 82.3 44.5 82.4 44.6C82.8 44.9 83.0 45.0 83.2 45.4C83.3 45.5 83.5 45.8 83.7 46.0C84.1 46.3 85.0 47.6 85.2 48.1C85.3 48.3 85.5 48.5 85.7 48.7C86.0 49.1 86.5 50.0 86.6 50.5C86.7 51.3 87.2 52.9 87.4 53.4C87.5 53.7 87.6 54.6 87.8 56.3C87.9 57.1 87.9 57.3 87.7 57.7C87.6 57.9 87.6 58.3 87.6 58.5C87.5 59.1 87.1 60.5 86.7 61.1C86.7 61.3 86.6 61.5 86.5 61.7C86.4 62.0 86.2 62.4 85.9 62.9C85.8 63.1 85.6 63.4 85.5 63.6C85.3 64.0 84.8 64.8 84.5 65.1C84.4 65.2 84.2 65.5 84.1 65.7C83.9 65.9 83.7 66.1 83.6 66.2C83.4 66.3 82.9 66.8 82.4 67.3C81.9 67.8 81.3 68.3 81.2 68.5C81.0 68.6 80.7 68.8 80.5 69.0C80.2 69.3 79.0 70.1 78.3 70.5C78.2 70.5 78.0 70.7 77.8 70.8C77.6 70.9 77.2 71.1 77.0 71.2C76.8 71.3 76.3 71.5 76.0 71.7C75.7 71.8 75.3 72.0 75.1 72.1C74.8 72.3 74.5 72.5 73.9 72.9C73.7 73.1 73.4 73.2 73.0 73.3C72.7 73.4 72.3 73.6 72.0 73.7C71.8 73.8 71.3 74.0 71.0 74.1C70.6 74.2 70.1 74.5 69.7 74.6C68.9 75.0 68.6 75.1 67.8 75.2C67.5 75.3 67.1 75.4 66.9 75.5C66.1 75.7 65.7 75.8 65.1 75.9C64.7 76.0 64.2 76.1 63.9 76.2C63.6 76.2 63.1 76.3 62.7 76.3C62.4 76.4 62.0 76.4 61.9 76.5C61.6 76.6 60.4 76.9 60.3 76.9C60.2 76.9 59.9 76.9 59.7 77.0C59.1 77.1 58.2 77.2 56.2 77.2C52.7 77.2 52.1 77.2 51.5 77.0C51.2 77.0 51.0 76.9 50.4 76.9C50.1 76.9 49.6 76.9 49.4 76.9C48.8 76.9 48.6 76.9 48.5 77.1C48.4 77.3 48.1 78.4 48.1 78.7C48.1 78.8 48.0 79.1 48.0 79.4C47.9 79.7 47.8 80.0 47.8 80.1C47.7 80.2 47.7 80.7 47.6 81.0C47.5 81.4 47.4 81.9 47.4 82.1C47.3 82.3 47.2 82.7 47.1 83.0C47.0 83.4 47.0 83.7 46.8 84.8C46.8 85.1 46.7 85.4 46.6 85.7C46.5 85.9 46.4 86.3 46.3 86.5C46.3 86.6 46.2 87.0 46.2 87.2C46.1 87.5 46.0 87.8 46.0 88.0C45.9 88.2 45.9 88.5 45.9 88.7C45.8 88.8 45.7 89.1 45.6 89.4C45.5 89.7 45.4 90.1 45.3 90.3C45.2 90.7 45.2 90.7 44.9 91.3C44.7 91.5 44.6 91.9 44.5 92.3C44.1 93.8 42.8 95.2 40.8 96.3C40.6 96.4 40.1 96.7 39.8 97.0C39.0 97.5 38.7 97.8 37.8 98.2C37.5 98.3 37.1 98.6 36.9 98.7C36.5 99.1 36.4 99.2 35.7 99.5C35.3 99.6 34.9 99.8 34.7 99.9C34.3 100.1 34.0 100.1 33.9 99.9ZM62.3 70.9C62.5 70.9 63.1 70.8 63.6 70.8C67.2 70.7 72.5 69.0 74.2 67.4C74.4 67.2 75.3 65.9 75.5 65.4C76.1 64.3 76.3 63.3 76.7 61.2C76.7 60.6 76.7 59.0 76.6 58.6C76.5 58.4 76.5 58.0 76.4 57.7C76.3 56.8 76.0 55.7 75.7 55.0C75.6 54.7 75.4 54.2 75.3 54.1C75.2 53.7 75.0 53.5 74.6 53.0C74.4 52.8 74.1 52.4 73.9 52.0C73.5 51.4 72.3 50.1 71.5 49.5C71.3 49.4 71.1 49.2 71.0 49.0C70.7 48.7 69.9 48.2 69.2 47.9C68.9 47.8 68.3 47.5 67.9 47.3C67.4 47.1 67.0 46.9 66.9 46.9C66.9 46.8 66.6 46.7 66.3 46.6C65.9 46.4 65.7 46.4 65.2 46.3C64.7 46.3 64.2 46.2 63.1 45.7C62.6 45.5 62.6 45.5 61.7 45.5C60.8 45.5 59.5 45.4 59.1 45.3C58.8 45.3 57.1 45.3 56.4 45.3C55.3 45.4 54.6 45.7 54.5 46.2C54.3 46.5 54.2 47.5 54.2 48.1C54.2 48.7 54.1 48.8 54.0 49.1C53.8 49.5 53.4 51.2 53.3 51.7C53.3 51.9 53.2 52.5 53.0 53.0C52.9 53.6 52.8 54.2 52.7 54.4C52.7 54.6 52.6 55.1 52.5 55.4C52.4 55.8 52.3 56.4 52.3 56.8C52.3 57.3 52.2 57.5 52.1 57.8C51.9 58.2 51.9 58.4 51.9 58.9C51.8 59.3 51.8 59.6 51.7 59.8C51.6 60.0 51.5 60.3 51.5 60.5C51.5 60.7 51.4 61.0 51.3 61.1C51.2 61.4 51.0 62.6 50.9 63.5C50.8 63.9 50.8 64.3 50.6 64.6C50.5 65.0 50.4 65.2 50.4 65.4C50.4 65.6 50.4 65.8 50.3 66.0C50.3 66.1 50.2 66.5 50.2 66.7C50.1 66.9 50.1 67.2 50.0 67.3C49.7 68.1 50.3 68.7 51.5 68.9C52.0 69.0 52.4 69.1 53.6 69.5C54.6 69.9 55.8 70.2 56.4 70.3C56.7 70.4 57.2 70.5 57.5 70.6C58.0 70.7 58.1 70.8 58.7 70.8C59.4 70.8 60.6 70.8 61.1 70.9C61.6 71.0 61.7 71.0 62.3 70.9ZM40.3 18.1C39.8 18.0 39.3 17.9 39.0 17.8C37.9 17.7 36.7 17.2 36.3 16.6C36.1 16.4 36.0 16.3 35.6 16.1C34.8 15.7 33.9 14.7 33.5 13.7C33.4 13.4 33.2 13.0 33.1 12.8C33.0 12.7 32.8 12.1 32.6 11.6C32.3 10.6 32.3 10.9 32.3 8.8C32.3 7.1 33.0 4.8 34.0 3.6C34.2 3.5 34.4 3.2 34.5 3.0C34.7 2.8 34.9 2.6 35.3 2.3C35.5 2.1 35.9 1.8 36.1 1.7C37.0 0.9 38.4 0.4 39.6 0.3C39.9 0.2 40.4 0.2 40.6 0.1C41.1 -0.0 41.8 -0.0 42.2 0.1C42.4 0.1 42.7 0.2 42.9 0.2C43.4 0.2 45.0 0.8 45.7 1.1C46.1 1.3 46.4 1.5 46.7 1.9C46.8 2.0 47.0 2.2 47.2 2.4C47.5 2.5 47.7 2.8 47.8 2.9C47.9 3.1 48.2 3.4 48.4 3.6C49.1 4.3 50.1 6.7 50.1 7.6C50.1 7.9 50.1 8.3 50.2 8.5C50.3 9.4 50.2 10.8 49.9 11.3C49.8 11.6 49.6 12.0 49.5 12.3C49.2 13.3 48.7 14.3 48.3 14.7C48.1 14.9 47.8 15.2 47.7 15.4C47.4 15.9 47.2 16.1 46.6 16.4C46.4 16.5 46.1 16.6 46.0 16.8C45.7 17.0 44.5 17.6 44.4 17.6C44.3 17.6 44.0 17.7 43.7 17.8C42.9 18.1 42.3 18.2 41.8 18.1C41.4 18.1 41.3 18.1 40.9 18.1C40.5 18.2 40.4 18.2 40.3 18.1Z"/></symbol>
+  <symbol id="i-whatsapp" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></symbol>
+  <symbol id="i-instagram" viewBox="0 0 24 24"><rect width="20" height="20" x="2" y="2" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><path d="M17.5 6.5h.01"/></symbol>
+  <symbol id="i-facebook" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+  <symbol id="i-arrow-up-right" viewBox="0 0 24 24"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></symbol>
+  <symbol id="i-chevron-left" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></symbol>
+  <symbol id="i-chevron-right" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="M12 5v14"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="M11.48 2.5a.56.56 0 0 1 1.04 0l2.13 5.11a.56.56 0 0 0 .47.35l5.52.44c.5.04.7.66.32.99l-4.2 3.6a.56.56 0 0 0-.18.56l1.28 5.39a.56.56 0 0 1-.84.61l-4.73-2.89a.56.56 0 0 0-.59 0l-4.72 2.89a.56.56 0 0 1-.84-.61l1.28-5.39a.56.56 0 0 0-.18-.56l-4.2-3.6a.56.56 0 0 1 .32-.99l5.52-.44a.56.56 0 0 0 .47-.35z"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+  <symbol id="i-dumbbell" viewBox="0 0 24 24"><path d="m6.5 6.5 11 11"/><path d="m21 21-1-1"/><path d="m3 3 1 1"/><path d="m18 22 4-4"/><path d="m2 6 4-4"/><path d="m3 10 7-7"/><path d="m14 21 7-7"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+  <symbol id="i-laptop" viewBox="0 0 24 24"><path d="M20 16V7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v9m16 0H4m16 0 1.28 2.55a1 1 0 0 1-.9 1.45H3.62a1 1 0 0 1-.9-1.45L4 16"/></symbol>
+  <symbol id="i-apple" viewBox="0 0 24 24"><path d="M12 20.94c1.5 0 2.75 1.06 4 1.06 3 0 6-8 6-12.22A4.91 4.91 0 0 0 17 5c-2.22 0-4 1.44-5 2-1-.56-2.78-2-5-2a4.9 4.9 0 0 0-5 4.78C2 14 5 22 8 22c1.25 0 2.5-1.06 4-1.06Z"/><path d="M10 2c1 .5 2 2 2 5"/></symbol>
+  <symbol id="i-flame" viewBox="0 0 24 24"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></symbol>
+  <symbol id="i-lotus" viewBox="0 0 24 24"><path d="M12 20c-2.2-1.6-3.5-4.2-3.5-7S9.8 7.5 12 5c2.2 2.5 3.5 5.2 3.5 8s-1.3 5.4-3.5 7Z"/><path d="M12 20c-4.2 0-8-2.4-9-6.2 2.6-.6 5.1 0 6.6 1.4"/><path d="M12 20c4.2 0 8-2.4 9-6.2-2.6-.6-5.1 0-6.6 1.4"/></symbol>
+  <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></symbol>
+  <symbol id="i-hand" viewBox="0 0 24 24"><path d="M18 11V6a2 2 0 0 0-2-2a2 2 0 0 0-2 2"/><path d="M14 10V4a2 2 0 0 0-2-2a2 2 0 0 0-2 2v2"/><path d="M10 10.5V6a2 2 0 0 0-2-2a2 2 0 0 0-2 2v8"/><path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15"/></symbol>
+  <symbol id="i-presentation" viewBox="0 0 24 24"><path d="M2 3h20"/><path d="M21 3v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V3"/><path d="m7 21 5-5 5 5"/></symbol>
+  <symbol id="i-trophy" viewBox="0 0 24 24"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></symbol>
+  <symbol id="i-heart-pulse" viewBox="0 0 24 24"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/><path d="M3.22 12H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27"/></symbol>
+  <symbol id="i-zap" viewBox="0 0 24 24"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></symbol>
+  <symbol id="i-timer" viewBox="0 0 24 24"><path d="M10 2h4"/><path d="m12 14 3-3"/><circle cx="12" cy="14" r="8"/></symbol>
+  <symbol id="i-baby" viewBox="0 0 24 24"><path d="M9 12h.01"/><path d="M15 12h.01"/><path d="M10 16c.5.3 1.2.5 2 .5s1.5-.2 2-.5"/><path d="M19 6.3a9 9 0 0 1 1.8 3.9 2 2 0 0 1 0 3.6 9 9 0 0 1-17.6 0 2 2 0 0 1 0-3.6A9 9 0 0 1 12 3c2 0 3.5 1.1 3.5 2.5s-.9 2.5-2 2.5c-.8 0-1.5-.4-1.5-1"/></symbol>
+  <symbol id="i-footprints" viewBox="0 0 24 24"><path d="M4 16v-2.38C4 11.5 2.97 10.5 3 8c.03-2.72 1.49-6 4.5-6C9.37 2 10 3.8 10 5.5c0 3.11-2 5.66-2 8.68V16a2 2 0 1 1-4 0Z"/><path d="M20 20v-2.38c0-2.12 1.03-3.12 1-5.62-.03-2.72-1.49-6-4.5-6C14.63 6 14 7.8 14 9.5c0 3.11 2 5.66 2 8.68V20a2 2 0 1 0 4 0Z"/><path d="M16 17h4"/><path d="M4 13h4"/></symbol>
+  <symbol id="i-stretch" viewBox="0 0 24 24"><circle cx="12" cy="4.5" r="1.5"/><path d="m9 21 3-7 3 7"/><path d="M4 7.5 12 10l8-2.5"/><path d="M12 10v4"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></symbol>
+  <symbol id="i-utensils" viewBox="0 0 24 24"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/></symbol>
+  <symbol id="i-bone" viewBox="0 0 24 24"><path d="M17 10c.7-.7 1.69 0 2.5 0a2.5 2.5 0 1 0 0-5 .5.5 0 0 1-.5-.5 2.5 2.5 0 1 0-5 0c0 .81.7 1.8 0 2.5l-7 7c-.7.7-1.69 0-2.5 0a2.5 2.5 0 0 0 0 5c.28 0 .5.22.5.5a2.5 2.5 0 1 0 5 0c0-.81-.7-1.8 0-2.5Z"/></symbol>
+  <symbol id="i-droplet" viewBox="0 0 24 24"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/></symbol>
+  <symbol id="i-repeat" viewBox="0 0 24 24"><path d="m17 2 4 4-4 4"/><path d="M3 11v-1a4 4 0 0 1 4-4h14"/><path d="m7 22-4-4 4-4"/><path d="M21 13v1a4 4 0 0 1-4 4H3"/></symbol>
+  <symbol id="i-sparkles" viewBox="0 0 24 24"><path d="M9.94 15.5A2 2 0 0 0 8.5 14.06l-6.14-1.58a.5.5 0 0 1 0-.96L8.5 9.94A2 2 0 0 0 9.94 8.5l1.58-6.14a.5.5 0 0 1 .96 0L14.06 8.5A2 2 0 0 0 15.5 9.94l6.14 1.58a.5.5 0 0 1 0 .96L15.5 14.06a2 2 0 0 0-1.44 1.44l-1.58 6.14a.5.5 0 0 1-.96 0z"/></symbol>
+  <symbol id="i-alert" viewBox="0 0 24 24"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"/><path d="M12 9v4"/><path d="M12 17h.01"/></symbol>
+  <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M15.48 12.89 17 22l-5-3-5 3 1.52-9.11"/></symbol>
+  <symbol id="i-cap" viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></symbol>
+  <symbol id="i-calendar" viewBox="0 0 24 24"><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h18"/><path d="m9 16 2 2 4-4"/></symbol>
+  <symbol id="i-clipboard" viewBox="0 0 24 24"><rect width="8" height="4" x="8" y="2" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="M12 11h4"/><path d="M12 16h4"/><path d="M8 11h.01"/><path d="M8 16h.01"/></symbol>
+  <symbol id="i-trending" viewBox="0 0 24 24"><path d="m22 7-8.5 8.5-5-5L2 17"/><path d="M16 7h6v6"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><rect width="18" height="11" x="3" y="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></symbol>
+</svg>
+
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="site-header" data-header>
+  <div class="container header-inner">
+    <a class="brand" href="#inicio" aria-label="Tati Portela – voltar ao início">
+      <svg class="brand-mark" aria-hidden="true"><use href="#logo"/></svg>
+      <span class="brand-text"><strong>Tati Portela</strong><small>Personal Trainer</small></span>
+    </a>
+
+    <nav class="main-nav" id="menu" aria-label="Navegação principal">
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#treinos">Objetivos</a></li>
+        <li><a href="#metodo">Método</a></li>
+        <li><a href="#protocolo">GLP-1</a></li>
+        <li><a href="#depoimentos">Depoimentos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+      <div class="nav-extra">
+        <a class="btn btn-primary" href="https://wa.me/5541997786117" data-wa="Olá, Tati! Vim pelo site e quero agendar minha avaliação." data-cta="menu" target="_blank" rel="noopener">
+          <svg class="i i--fill" aria-hidden="true"><use href="#i-whatsapp"/></svg> Agendar minha avaliação
+        </a>
+        <p>Seg. a sex., 9h às 20h · Água Verde, Curitiba</p>
+      </div>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn theme-toggle" type="button" data-theme-toggle aria-label="Alternar entre tema claro e escuro">
+        <svg class="i icon-moon" aria-hidden="true"><use href="#i-moon"/></svg>
+        <svg class="i icon-sun" aria-hidden="true"><use href="#i-sun"/></svg>
+      </button>
+      <a class="btn btn-primary btn-sm header-cta" href="https://wa.me/5541997786117" data-wa="Olá, Tati! Vim pelo site e quero agendar minha avaliação." data-cta="header" target="_blank" rel="noopener">Agendar avaliação</a>
+      <button class="icon-btn menu-toggle" type="button" data-menu-toggle aria-controls="menu" aria-expanded="false" aria-label="Abrir menu">
+        <span class="menu-icon" aria-hidden="true"><span></span><span></span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="conteudo">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="inicio" aria-labelledby="hero-title">
+    <svg class="hero-watermark" aria-hidden="true"><use href="#logo"/></svg>
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="hero-chip enter"><span class="pulse-dot" aria-hidden="true"></span> Personal Trainer · CREF 022922-G/PR · Curitiba</p>
+        <h1 class="hero-title enter enter--slide" id="hero-title" style="--d:1">Corpo forte, <em>mente em sintonia.</em></h1>
+        <p class="hero-lead enter enter--slide" style="--d:2">Treino personalizado, Yoga, Pilates e Massoterapia com quem une ciência do exercício e cuidado de verdade. Há mais de 16 anos ajudando pessoas reais a conquistar resultados que duram.</p>
+        <div class="hero-actions enter" style="--d:3">
+          <a class="btn btn-primary" href="https://wa.me/5541997786117" data-wa="Olá, Tati! Vim pelo site e quero agendar minha avaliação." data-cta="hero" target="_blank" rel="noopener">
+            <svg class="i i--fill" aria-hidden="true"><use href="#i-whatsapp"/></svg> Agendar minha avaliação
+          </a>
+          <a class="btn btn-ghost" href="#servicos">Conhecer os serviços <svg class="i i-arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </div>
+        <ul class="hero-proof enter" style="--d:4">
+          <li><strong>500+</strong><span>alunos transformados</span></li>
+          <li><strong>16+</strong><span>anos de experiência</span></li>
+          <li><strong>97%</strong><span>de satisfação</span></li>
+        </ul>
+      </div>
+
+      <div class="hero-media enter" style="--d:2">
+        <div class="hero-photo">
+          <picture>
+            <source type="image/avif" srcset="assets/img/tati-boas-vindas-560.avif 560w, assets/img/tati-boas-vindas-840.avif 840w, assets/img/tati-boas-vindas-1120.avif 1120w" sizes="(max-width: 960px) min(480px, 92vw), 520px">
+            <source type="image/webp" srcset="assets/img/tati-boas-vindas-560.webp 560w, assets/img/tati-boas-vindas-840.webp 840w, assets/img/tati-boas-vindas-1120.webp 1120w" sizes="(max-width: 960px) min(480px, 92vw), 520px">
+            <img src="assets/img/tati-boas-vindas-840.jpg" width="840" height="1145" alt="Tati Portela sorrindo e estendendo a mão em um convite, ao pôr do sol nas dunas" fetchpriority="high" decoding="async">
+          </picture>
+        </div>
+        <div class="float-card float-card--top">
+          <span class="float-card__icon float-card__icon--plum"><svg class="brand-mark" aria-hidden="true"><use href="#logo"/></svg></span>
+          <span><strong>Studio Corpo e Mente</strong><span>em Sintonia · Água Verde</span></span>
+        </div>
+        <div class="float-card float-card--bottom">
+          <span class="float-card__icon"><svg class="i" aria-hidden="true"><use href="#i-cap"/></svg></span>
+          <span><strong>Pós-graduada</strong><span>em Fisiologia do Exercício</span></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAIXA ============ -->
+  <div class="marquee">
+    <p class="sr-only">Especialidades: Personal Training, Musculação, Yoga, Pilates, Massoterapia, Protocolo GLP-1, Funcional, HIIT, Mobilidade e Consultoria Online</p>
+    <div class="marquee__track" aria-hidden="true">
+      <ul class="marquee__group">
+        <li>Personal Training</li><li>Musculação</li><li>Yoga</li><li>Pilates</li><li>Massoterapia</li><li>Protocolo GLP-1</li><li>Funcional</li><li>HIIT</li><li>Mobilidade</li><li>Consultoria Online</li>
+      </ul>
+      <ul class="marquee__group">
+        <li>Personal Training</li><li>Musculação</li><li>Yoga</li><li>Pilates</li><li>Massoterapia</li><li>Protocolo GLP-1</li><li>Funcional</li><li>HIIT</li><li>Mobilidade</li><li>Consultoria Online</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ============ SOBRE ============ -->
+  <section class="section" id="sobre" aria-labelledby="sobre-title">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-media reveal">
+          <div class="about-photo">
+            <picture>
+              <source type="image/avif" srcset="assets/img/tati-retrato-480.avif 480w, assets/img/tati-retrato-800.avif 800w, assets/img/tati-retrato-1200.avif 1200w" sizes="(max-width: 960px) min(480px, 90vw), 40vw">
+              <source type="image/webp" srcset="assets/img/tati-retrato-480.webp 480w, assets/img/tati-retrato-800.webp 800w, assets/img/tati-retrato-1200.webp 1200w" sizes="(max-width: 960px) min(480px, 90vw), 40vw">
+              <img src="assets/img/tati-retrato-800.jpg" width="800" height="1067" alt="Retrato de Tati Portela sorrindo, com o queixo apoiado na mão" loading="lazy" decoding="async">
+            </picture>
+          </div>
+          <div class="about-badge">
+            <svg class="brand-mark" aria-hidden="true"><use href="#logo"/></svg>
+            <span><strong>Studio Corpo e Mente em Sintonia</strong>Av. República Argentina, 2403 · Curitiba</span>
+          </div>
+        </div>
+
+        <div class="about-copy">
+          <p class="eyebrow reveal">Sobre mim</p>
+          <h2 class="title reveal" id="sobre-title" style="--d:1">Prazer, eu sou <em>a Tati.</em></h2>
+          <p class="lead reveal" style="--d:2">Sou Tatiana Portela, Personal Trainer pós-graduada em Fisiologia do Exercício e professora especialista em Yoga, Pilates e Massoterapia. Há mais de 16 anos ajudo pessoas a transformar corpo e mente — com foco em musculação, emagrecimento, ganho de massa magra e equilíbrio.</p>
+          <p class="reveal" style="--d:2">Minha abordagem integra o melhor do treinamento funcional com a sabedoria milenar do Yoga, a precisão do Pilates e técnicas avançadas de massagem terapêutica.</p>
+          <blockquote class="pull-quote reveal" style="--d:3">
+            <p>“Cada cliente é único. Desenvolvo programas personalizados que unem força, flexibilidade, recuperação muscular, consciência corporal e bem-estar completo.”</p>
+          </blockquote>
+          <ul class="credentials reveal" style="--d:4">
+            <li><svg class="i" aria-hidden="true"><use href="#i-award"/></svg><span><strong>CREF 022922-G/PR</strong><span>Registro no Conselho de Educação Física</span></span></li>
+            <li><svg class="i" aria-hidden="true"><use href="#i-cap"/></svg><span><strong>Pós-graduação</strong><span>Fisiologia do Exercício</span></span></li>
+            <li><svg class="i" aria-hidden="true"><use href="#i-lotus"/></svg><span><strong>Especialista</strong><span>Yoga, Pilates e Massoterapia</span></span></li>
+            <li><svg class="i" aria-hidden="true"><use href="#i-calendar"/></svg><span><strong>Desde 2008</strong><span>Transformando vidas pelo movimento</span></span></li>
+          </ul>
+        </div>
+      </div>
+
+      <ul class="stats" role="list" aria-label="Números">
+        <li class="reveal"><strong><span data-count="500">500</span><span class="accent">+</span></strong><span>alunos transformados</span></li>
+        <li class="reveal" style="--d:1"><strong><span data-count="16">16</span><span class="accent">+</span></strong><span>anos de experiência</span></li>
+        <li class="reveal" style="--d:2"><strong><span data-count="97">97</span><span class="accent">%</span></strong><span>de satisfação dos alunos</span></li>
+        <li class="reveal" style="--d:3"><strong><span data-count="4">4</span></strong><span>especialidades integradas</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ SERVIÇOS ============ -->
+  <section class="section section--alt" id="servicos" aria-labelledby="servicos-title">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow reveal">Serviços</p>
+        <h2 class="title reveal" id="servicos-title" style="--d:1">Tudo o que seu corpo precisa, <em>em um só lugar.</em></h2>
+        <p class="lead reveal" style="--d:2">Programas personalizados para cada objetivo — do treino de força ao relaxamento profundo.</p>
+      </div>
+
+      <ul class="bento" role="list">
+        <li class="card card--feature reveal" id="servico-personal">
+          <span class="tag">Mais procurado</span>
+          <span class="card-icon"><svg class="i" aria-hidden="true"><use href="#i-dumbbell"/></svg></span>
+          <h3>Personal Training Individual</h3>
+          <p>Treinos 100% personalizados, com acompanhamento direto para máxima eficiência e segurança — do primeiro agachamento à sua melhor versão.</p>
+          <ul class="checklist">
+            <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg> Avaliação física completa</li>
+            <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg> Programa adaptado ao seu corpo e à sua rotina</li>
+            <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg> Correção técnica em cada repetição</li>
+            <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg> Orientação de hábitos e reavaliações periódicas</li>
+          </ul>
+          <ul class="highlights" role="list">
+            <li><strong>1:1</strong>atenção exclusiva</li>
+            <li><strong>100%</strong>personalizado</li>
+            <li><strong>16+</strong>anos de experiência</li>
+          </ul>
+          <a class="btn btn-primary" href="https://wa.me/5541997786117" data-wa="Olá, Tati! Tenho interesse no Personal Training Individual." data-cta="servico-personal" target="_blank" rel="noopener">Quero treinar com a Tati <svg class="i i-arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </li>
+
+        <li class="card span-3 reveal" id="servico-yoga" style="--d:1">
+          <span class="card-icon"><svg class="i" aria-hidden="true"><use href="#i-lotus"/></svg></span>
+          <h3>Yoga</h3>
+          <p>Para todos os níveis, do iniciante ao avançado. Equilíbrio, flexibilidade e paz interior em cada prática.</p>
+          <ul class="checklist">
+            <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg> Hatha, Vinyasa e Ashtanga</li>
+            <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg> Meditação e respiração</li>
+            <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg> Redução de estresse</li>
+          </ul>
+          <a class="link-arrow" href="https://wa.me/5541997786117" data-wa="Olá, Tati! Tenho interesse nas aulas de Yoga." data-cta="servico-yoga" target="_blank" rel="noopener">Saiba mais <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </li>
+
+        <li class="card span-3 reveal" id="servico-pilates" style="--d:2">
+          <span class="card-icon"><svg class="i" aria-hidden="true"><use href="#i-target"/></svg></span>
+          <h3>Pilates</h3>
+          <p>Fortalecimento do core, postura e consciência corporal. Um método preciso para resultados visíveis.</p>
+          <ul class="checklist">
+            <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg> Solo e com aparelhos</li>
+            <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg> Correção postural</li>
+            <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg> Prevenção e readaptação pós-lesão</li>
+          </ul>
+          <a class="link-arrow" href="https://wa.me/5541997786117" data-wa="Olá, Tati! Tenho interesse nas aulas de Pilates." data-cta="servico-pilates" target="_blank" rel="noopener">Saiba mais <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </li>
+
+        <li class="card span-6 reveal" id="servico-massoterapia" style="--d:1">
+          <span class="card-icon"><svg class="i" aria-hidden="true"><use href="#i-hand"/></svg></span>
+          <h3>Massoterapia Especializada</h3>
+          <p>Sessões de massagem terapêutica para alívio de dores, recuperação muscular e relaxamento profundo.</p>
+          <ul class="chips" role="list" aria-label="Técnicas">
+            <li>Liberação miofascial</li><li>Pedras quentes</li><li>Relaxante</li><li>Desportiva</li><li>Moxabustão</li><li>Haihua (eletroestimulação)</li><li>Reflexologia</li><li>Shiatsu</li>
+          </ul>
+          <a class="link-arrow" href="https://wa.me/5541997786117" data-wa="Olá, Tati! Gostaria de agendar uma sessão de Massoterapia." data-cta="servico-massoterapia" target="_blank" rel="noopener">Agendar uma sessão <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </li>
+
+        <li class="card span-3 reveal" id="servico-online">
+          <span class="card-icon"><svg class="i" aria-hidden="true"><use href="#i-laptop"/></svg></span>
+          <h3>Consultoria Online</h3>
+          <p>Planos de treino personalizados e acompanhamento a distância, onde você estiver.</p>
+          <ul class="checklist">
+            <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg> Atualizações semanais</li>
+            <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg> Suporte ilimitado por WhatsApp</li>
+          </ul>
+          <a class="link-arrow" href="https://wa.me/5541997786117" data-wa="Olá, Tati! Tenho interesse na Consultoria Online." data-cta="servico-online" target="_blank" rel="noopener">Saiba mais <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </li>
+
+        <li class="card span-3 reveal" id="servico-grupo" style="--d:1">
+          <span class="card-icon"><svg class="i" aria-hidden="true"><use href="#i-users"/></svg></span>
+          <h3>Treino em Grupo</h3>
+          <p>Aulas dinâmicas e motivantes em pequenos grupos, com integração e apoio mútuo.</p>
+          <ul class="checklist">
+            <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg> Atmosfera motivadora</li>
+            <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg> Treinos variados</li>
+          </ul>
+          <a class="link-arrow" href="https://wa.me/5541997786117" data-wa="Olá, Tati! Tenho interesse no Treino em Grupo." data-cta="servico-grupo" target="_blank" rel="noopener">Saiba mais <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </li>
+
+        <li class="card span-3 reveal" id="servico-desafio" style="--d:2">
+          <span class="card-icon"><svg class="i" aria-hidden="true"><use href="#i-trophy"/></svg></span>
+          <h3>Desafio 90 Dias</h3>
+          <p>Programa intensivo com metas claras, acompanhamento total e evolução documentada.</p>
+          <ul class="checklist">
+            <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg> Avaliação inicial e final</li>
+            <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg> Fotos de antes e depois</li>
+            <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg> Certificado de conclusão</li>
+          </ul>
+          <a class="link-arrow" href="https://wa.me/5541997786117" data-wa="Olá, Tati! Quero participar do Desafio 90 Dias." data-cta="servico-desafio" target="_blank" rel="noopener">Quero participar <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </li>
+
+        <li class="card span-3 reveal" id="servico-habitos" style="--d:3">
+          <span class="card-icon"><svg class="i" aria-hidden="true"><use href="#i-apple"/></svg></span>
+          <h3>Hábitos &amp; Nutrição</h3>
+          <p>Orientação de hábitos saudáveis integrada ao treino, em sintonia com o seu nutricionista.</p>
+          <ul class="checklist">
+            <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg> Rotina, sono e hidratação</li>
+            <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg> Acompanhamento mensal</li>
+          </ul>
+          <a class="link-arrow" href="https://wa.me/5541997786117" data-wa="Olá, Tati! Quero saber mais sobre a orientação de hábitos." data-cta="servico-habitos" target="_blank" rel="noopener">Saiba mais <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </li>
+
+        <li class="card card--banner span-12 reveal" id="servico-workshops">
+          <span class="card-icon"><svg class="i" aria-hidden="true"><use href="#i-presentation"/></svg></span>
+          <div class="banner-copy">
+            <h3>Workshops &amp; Palestras para empresas e grupos</h3>
+            <p>Conteúdo educativo, interativo e prático sobre fitness, Yoga, Pilates, Massoterapia e estilo de vida saudável — com certificação inclusa.</p>
+          </div>
+          <a class="btn btn-ghost" href="https://wa.me/5541997786117" data-wa="Olá, Tati! Gostaria de levar um workshop/palestra para minha empresa." data-cta="servico-workshops" target="_blank" rel="noopener">Levar para minha empresa <svg class="i i-arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ OBJETIVOS ============ -->
+  <section class="section section--dark" id="treinos" aria-labelledby="treinos-title">
+    <div class="container">
+      <div class="section-head section-head--split">
+        <div>
+          <p class="eyebrow reveal">Modalidades de treino</p>
+          <h2 class="title reveal" id="treinos-title" style="--d:1">Qual é o seu <em>objetivo?</em></h2>
+        </div>
+        <p class="lead reveal" style="--d:2">Escolha o seu e fale comigo — o plano é montado sob medida, para todos os níveis.</p>
+      </div>
+
+      <ul class="goals" role="list">
+        <li><a class="goal" href="https://wa.me/5541997786117" data-wa="Olá, Tati! Meu objetivo é Musculação e Hipertrofia." data-cta="objetivo-hipertrofia" target="_blank" rel="noopener">
+          <span class="goal-top"><svg class="i" aria-hidden="true"><use href="#i-dumbbell"/></svg><svg class="i i-arrow-up" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></span>
+          <h3>Musculação &amp; Hipertrofia</h3>
+          <p>Força com progressão de carga para ganhar massa magra, tonificar e definir.</p>
+          <ul class="chips"><li>Iniciante</li><li>Intermediário</li><li>Avançado</li></ul>
+        </a></li>
+        <li><a class="goal" href="https://wa.me/5541997786117" data-wa="Olá, Tati! Meu objetivo é Emagrecimento." data-cta="objetivo-emagrecimento" target="_blank" rel="noopener">
+          <span class="goal-top"><svg class="i" aria-hidden="true"><use href="#i-flame"/></svg><svg class="i i-arrow-up" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></span>
+          <h3>Emagrecimento</h3>
+          <p>Cardio, HIIT e força combinados de forma inteligente para acelerar o metabolismo.</p>
+          <ul class="chips"><li>HIIT</li><li>Cardio</li><li>Metabólico</li></ul>
+        </a></li>
+        <li><a class="goal" href="https://wa.me/5541997786117" data-wa="Olá, Tati! Tenho interesse em Treinamento Funcional." data-cta="objetivo-funcional" target="_blank" rel="noopener">
+          <span class="goal-top"><svg class="i" aria-hidden="true"><use href="#i-zap"/></svg><svg class="i i-arrow-up" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></span>
+          <h3>Treinamento Funcional</h3>
+          <p>Movimentos integrados que melhoram força, coordenação, equilíbrio e resistência no dia a dia.</p>
+          <ul class="chips"><li>Core</li><li>Mobilidade</li><li>Performance</li></ul>
+        </a></li>
+        <li><a class="goal" href="https://wa.me/5541997786117" data-wa="Olá, Tati! Tenho interesse em treinos de HIIT." data-cta="objetivo-hiit" target="_blank" rel="noopener">
+          <span class="goal-top"><svg class="i" aria-hidden="true"><use href="#i-timer"/></svg><svg class="i i-arrow-up" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></span>
+          <h3>HIIT · Alta intensidade</h3>
+          <p>Sessões curtas e intensas com efeito EPOC: o corpo segue gastando energia depois do treino.</p>
+          <ul class="chips"><li>20–40 min</li><li>Cardio + força</li></ul>
+        </a></li>
+        <li><a class="goal" href="https://wa.me/5541997786117" data-wa="Olá, Tati! Estou voltando de uma lesão e quero treinar com segurança." data-cta="objetivo-pos-lesao" target="_blank" rel="noopener">
+          <span class="goal-top"><svg class="i" aria-hidden="true"><use href="#i-heart-pulse"/></svg><svg class="i i-arrow-up" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></span>
+          <h3>Pós-lesão &amp; Dores</h3>
+          <p>Fortalecimento articular e postural para quem volta de lesão ou convive com dores, com liberação do seu médico ou fisioterapeuta.</p>
+          <ul class="chips"><li>Postura</li><li>Lombar</li><li>Joelho e ombro</li></ul>
+        </a></li>
+        <li><a class="goal" href="https://wa.me/5541997786117" data-wa="Olá, Tati! Tenho interesse no treino para gestantes/pós-parto." data-cta="objetivo-gestantes" target="_blank" rel="noopener">
+          <span class="goal-top"><svg class="i" aria-hidden="true"><use href="#i-baby"/></svg><svg class="i i-arrow-up" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></span>
+          <h3>Gestantes &amp; Pós-parto</h3>
+          <p>Acompanhamento seguro para manter a saúde na gestação e recuperar a forma no pós-parto.</p>
+          <ul class="chips"><li>Pré-natal</li><li>Pós-parto</li><li>Assoalho pélvico</li></ul>
+        </a></li>
+        <li><a class="goal" href="https://wa.me/5541997786117" data-wa="Olá, Tati! Tenho interesse no treino para a terceira idade." data-cta="objetivo-terceira-idade" target="_blank" rel="noopener">
+          <span class="goal-top"><svg class="i" aria-hidden="true"><use href="#i-footprints"/></svg><svg class="i i-arrow-up" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></span>
+          <h3>Terceira Idade</h3>
+          <p>Força, equilíbrio e prevenção de quedas, com atenção especial à saúde óssea.</p>
+          <ul class="chips"><li>Equilíbrio</li><li>Força</li><li>Saúde óssea</li></ul>
+        </a></li>
+        <li><a class="goal" href="https://wa.me/5541997786117" data-wa="Olá, Tati! Quero melhorar minha mobilidade e flexibilidade." data-cta="objetivo-mobilidade" target="_blank" rel="noopener">
+          <span class="goal-top"><svg class="i" aria-hidden="true"><use href="#i-stretch"/></svg><svg class="i i-arrow-up" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></span>
+          <h3>Mobilidade &amp; Flexibilidade</h3>
+          <p>Amplitude articular, alongamento ativo e mobilidade funcional para se movimentar melhor.</p>
+          <ul class="chips"><li>Yoga</li><li>Pilates</li><li>Alongamento</li></ul>
+        </a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ MÉTODO ============ -->
+  <section class="section" id="metodo" aria-labelledby="metodo-title">
+    <div class="container">
+      <div class="section-head section-head--center">
+        <p class="eyebrow reveal">Como funciona</p>
+        <h2 class="title reveal" id="metodo-title" style="--d:1">Um método claro, <em>do primeiro dia ao resultado.</em></h2>
+      </div>
+      <ol class="steps" role="list">
+        <li class="step reveal">
+          <span class="step-num" aria-hidden="true">01</span>
+          <svg class="i" aria-hidden="true"><use href="#i-clipboard"/></svg>
+          <h3>Avaliação física</h3>
+          <p>Análise corporal, anamnese, objetivos e limitações: entendemos exatamente de onde você parte.</p>
+        </li>
+        <li class="step reveal" style="--d:1">
+          <span class="step-num" aria-hidden="true">02</span>
+          <svg class="i" aria-hidden="true"><use href="#i-target"/></svg>
+          <h3>Plano personalizado</h3>
+          <p>Programa exclusivo, ajustado ao seu corpo, à sua rotina e ao seu momento de vida.</p>
+        </li>
+        <li class="step reveal" style="--d:2">
+          <span class="step-num" aria-hidden="true">03</span>
+          <svg class="i" aria-hidden="true"><use href="#i-shield"/></svg>
+          <h3>Execução guiada</h3>
+          <p>Acompanhamento técnico em cada sessão para um resultado seguro e eficiente.</p>
+        </li>
+        <li class="step reveal" style="--d:3">
+          <span class="step-num" aria-hidden="true">04</span>
+          <svg class="i" aria-hidden="true"><use href="#i-trending"/></svg>
+          <h3>Ajustes &amp; evolução</h3>
+          <p>Reavaliações contínuas para você evoluir sempre — sem estagnar.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ PROTOCOLO GLP-1 ============ -->
+  <section class="section section--dark glp" id="protocolo" aria-labelledby="protocolo-title">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow reveal">Novidade · Protocolo especializado</p>
+        <h2 class="title reveal" id="protocolo-title" style="--d:1">Protocolo GLP-1: emagreça <em>preservando seus músculos.</em></h2>
+        <p class="lead reveal" style="--d:2">Treino estratégico para quem usa Mounjaro, Ozempic ou Wegovy — para proteger a massa magra e potencializar os resultados do tratamento.</p>
+      </div>
+
+      <div class="glp-intro">
+        <div class="stat-card reveal">
+          <span class="big"><small>Até</small>40%</span>
+          <p>do peso perdido pode ser massa muscular quando não há treino de força e acompanhamento adequados.</p>
+          <p class="footnote">Estimativa observada em estudos clínicos com essas medicações; varia de pessoa para pessoa.</p>
+        </div>
+        <div class="glp-copy reveal" style="--d:1">
+          <p><strong>Mounjaro (tirzepatida)</strong>, <strong>Ozempic (semaglutida)</strong> e <strong>Wegovy (semaglutida)</strong> são medicações que reduzem o apetite e ajudam no emagrecimento. O ponto crítico: sem estímulo muscular, boa parte do peso perdido pode vir dos músculos — e isso afeta força, metabolismo e a manutenção do resultado.</p>
+          <div class="notice" role="note">
+            <svg class="i" aria-hidden="true"><use href="#i-alert"/></svg>
+            <p>Essas medicações devem sempre ser prescritas e acompanhadas por médico. Meu papel é oferecer o <strong>protocolo de treino especializado</strong>, que complementa o tratamento médico e nutricional.</p>
+          </div>
+        </div>
+      </div>
+
+      <ul class="pillars" role="list">
+        <li class="pillar reveal"><svg class="i" aria-hidden="true"><use href="#i-shield"/></svg><h3>Preservação de massa magra</h3><p>Musculação prioritária, com cargas progressivas, para evitar a perda muscular acelerada durante o emagrecimento.</p></li>
+        <li class="pillar reveal" style="--d:1"><svg class="i" aria-hidden="true"><use href="#i-utensils"/></svg><h3>Suporte à baixa ingestão</h3><p>Treinos ajustados ao apetite reduzido, com foco na qualidade do estímulo e na gestão de energia.</p></li>
+        <li class="pillar reveal" style="--d:2"><svg class="i" aria-hidden="true"><use href="#i-bone"/></svg><h3>Saúde óssea</h3><p>Exercícios de força e impacto controlado para manter a densidade óssea, muitas vezes comprometida no emagrecimento rápido.</p></li>
+        <li class="pillar reveal"><svg class="i" aria-hidden="true"><use href="#i-droplet"/></svg><h3>Manejo de efeitos colaterais</h3><p>Sessões leves e adaptadas nos dias de náusea, fadiga ou desconforto, sem perder a consistência semanal.</p></li>
+        <li class="pillar reveal" style="--d:1"><svg class="i" aria-hidden="true"><use href="#i-repeat"/></svg><h3>Prevenção do efeito rebote</h3><p>Massa magra e hábitos sólidos para manter o resultado mesmo após o desmame da medicação.</p></li>
+        <li class="pillar reveal" style="--d:2"><svg class="i" aria-hidden="true"><use href="#i-sparkles"/></svg><h3>Estética &amp; firmeza</h3><p>Tonificação para minimizar a flacidez corporal e facial que pode acompanhar a perda rápida de peso.</p></li>
+      </ul>
+
+      <div class="meds">
+        <h3 class="subhead reveal">Entendendo as medicações</h3>
+        <ul class="meds-grid" role="list">
+          <li class="med reveal"><h4>Mounjaro</h4><span class="molecule">Tirzepatida</span><p>Agonista duplo GLP-1 + GIP. Nos estudos, costuma apresentar maior perda de peso média. Aplicação semanal.</p></li>
+          <li class="med reveal" style="--d:1"><h4>Ozempic</h4><span class="molecule">Semaglutida</span><p>Agonista de GLP-1 indicado originalmente para diabetes tipo 2 e também usado no emagrecimento. Aplicação semanal.</p></li>
+          <li class="med reveal" style="--d:2"><h4>Wegovy</h4><span class="molecule">Semaglutida</span><p>Mesma molécula do Ozempic, em dose maior, aprovada especificamente para o tratamento da obesidade. Aplicação semanal.</p></li>
+        </ul>
+      </div>
+
+      <div class="glp-bottom">
+        <div>
+          <h3 class="subhead reveal">Perguntas frequentes sobre GLP-1</h3>
+          <div class="faq reveal">
+            <details>
+              <summary>Posso treinar normalmente usando Mounjaro, Ozempic ou Wegovy? <svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+              <div class="answer"><p>Sim — e treinar é altamente recomendado. O treino de força é essencial para preservar a massa magra. Intensidade e volume são adaptados conforme seu apetite, energia e eventuais efeitos colaterais.</p></div>
+            </details>
+            <details>
+              <summary>Quantas vezes por semana devo treinar? <svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+              <div class="answer"><p>O ideal costuma ser de 3 a 5 sessões semanais, combinando força (prioritária) e atividade aeróbica leve a moderada. O plano é sempre individualizado.</p></div>
+            </details>
+            <details>
+              <summary>E se eu sentir náusea ou cansaço no dia do treino? <svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+              <div class="answer"><p>Adaptamos a sessão para algo mais leve (mobilidade, caminhada, alongamento) ou reagendamos. O importante é manter a consistência sem forçar o organismo.</p></div>
+            </details>
+            <details>
+              <summary>Você prescreve a medicação? <svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+              <div class="answer"><p>Não. A prescrição é exclusiva do médico. Trabalho em parceria com a sua equipe médica e nutricional, oferecendo o pilar do treino que potencializa o resultado.</p></div>
+            </details>
+            <details>
+              <summary>Em quanto tempo vejo mudanças na composição corporal? <svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+              <div class="answer"><p>Em média, entre 6 e 12 semanas já se notam mudanças em força, postura e composição corporal, acompanhadas por avaliações periódicas.</p></div>
+            </details>
+          </div>
+        </div>
+        <aside class="cta-card reveal" aria-label="Fale sobre o Protocolo GLP-1">
+          <h3>Está em tratamento com GLP-1?</h3>
+          <p>Vamos montar juntos o seu protocolo de treino para maximizar resultados e proteger a sua saúde.</p>
+          <a class="btn btn-primary" href="https://wa.me/5541997786117" data-wa="Olá, Tati! Estou em tratamento com GLP-1 (Mounjaro/Ozempic/Wegovy) e gostaria de saber mais sobre o protocolo de treino." data-cta="glp1" target="_blank" rel="noopener">
+            <svg class="i i--fill" aria-hidden="true"><use href="#i-whatsapp"/></svg> Falar com a Tati
+          </a>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DEPOIMENTOS ============ -->
+  <section class="section section--alt" id="depoimentos" aria-labelledby="depoimentos-title">
+    <div class="container">
+      <div class="section-head section-head--split">
+        <div>
+          <p class="eyebrow reveal">Depoimentos</p>
+          <h2 class="title reveal" id="depoimentos-title" style="--d:1">Quem treina com a Tati, <em>recomenda.</em></h2>
+        </div>
+        <div class="carousel-nav reveal" style="--d:2">
+          <button class="icon-btn" type="button" data-carousel-prev aria-controls="lista-depoimentos" aria-label="Depoimento anterior"><svg class="i" aria-hidden="true"><use href="#i-chevron-left"/></svg></button>
+          <button class="icon-btn" type="button" data-carousel-next aria-controls="lista-depoimentos" aria-label="Próximo depoimento"><svg class="i" aria-hidden="true"><use href="#i-chevron-right"/></svg></button>
+        </div>
+      </div>
+
+      <ul class="carousel reveal" id="lista-depoimentos" role="list" tabindex="0" aria-label="Depoimentos de alunos (role para ver mais)">
+        <li><figure class="testimonial">
+          <div class="stars" role="img" aria-label="5 de 5 estrelas"><svg class="i i--fill"><use href="#i-star"/></svg><svg class="i i--fill"><use href="#i-star"/></svg><svg class="i i--fill"><use href="#i-star"/></svg><svg class="i i--fill"><use href="#i-star"/></svg><svg class="i i--fill"><use href="#i-star"/></svg></div>
+          <blockquote><p>“A melhor decisão que tomei foi começar a treinar com a Tati. Ela é profissional, atenciosa e realmente se importa com seus clientes.”</p></blockquote>
+          <figcaption><span class="avatar" aria-hidden="true">FH</span><span><strong>Felipe Humberto</strong><span class="role">Empresário</span></span></figcaption>
+        </figure></li>
+        <li><figure class="testimonial">
+          <div class="stars" role="img" aria-label="5 de 5 estrelas"><svg class="i i--fill"><use href="#i-star"/></svg><svg class="i i--fill"><use href="#i-star"/></svg><svg class="i i--fill"><use href="#i-star"/></svg><svg class="i i--fill"><use href="#i-star"/></svg><svg class="i i--fill"><use href="#i-star"/></svg></div>
+          <blockquote><p>“Em 4 meses consegui meu corpo dos sonhos! A dedicação da Tati é impressionante. Super recomendo para qualquer pessoa que quer mudar!”</p></blockquote>
+          <figcaption><span class="avatar" aria-hidden="true">BR</span><span><strong>Bruna Rocha</strong><span class="role">Advogada</span></span></figcaption>
+        </figure></li>
+        <li><figure class="testimonial">
+          <div class="stars" role="img" aria-label="5 de 5 estrelas"><svg class="i i--fill"><use href="#i-star"/></svg><svg class="i i--fill"><use href="#i-star"/></svg><svg class="i i--fill"><use href="#i-star"/></svg><svg class="i i--fill"><use href="#i-star"/></svg><svg class="i i--fill"><use href="#i-star"/></svg></div>
+          <blockquote><p>“Tati é mais que uma personal trainer, ela é uma inspiração. Me ajudou não só no físico, mas também na minha autoestima.”</p></blockquote>
+          <figcaption><span class="avatar" aria-hidden="true">AP</span><span><strong>Andressa Pereira</strong><span class="role">Professora</span></span></figcaption>
+        </figure></li>
+        <li><figure class="testimonial">
+          <div class="stars" role="img" aria-label="5 de 5 estrelas"><svg class="i i--fill"><use href="#i-star"/></svg><svg class="i i--fill"><use href="#i-star"/></svg><svg class="i i--fill"><use href="#i-star"/></svg><svg class="i i--fill"><use href="#i-star"/></svg><svg class="i i--fill"><use href="#i-star"/></svg></div>
+          <blockquote><p>“Treino online com a Tati é perfeito para minha agenda. Qualidade profissional e atendimento excelente mesmo à distância!”</p></blockquote>
+          <figcaption><span class="avatar" aria-hidden="true">MB</span><span><strong>Marcos Brás</strong><span class="role">Consultor</span></span></figcaption>
+        </figure></li>
+        <li><figure class="testimonial">
+          <div class="stars" role="img" aria-label="5 de 5 estrelas"><svg class="i i--fill"><use href="#i-star"/></svg><svg class="i i--fill"><use href="#i-star"/></svg><svg class="i i--fill"><use href="#i-star"/></svg><svg class="i i--fill"><use href="#i-star"/></svg><svg class="i i--fill"><use href="#i-star"/></svg></div>
+          <blockquote><p>“Com a orientação nutricional + treino, alcancei objetivos que nunca pensei ser possível. Tati realmente entrega resultados!”</p></blockquote>
+          <figcaption><span class="avatar" aria-hidden="true">CG</span><span><strong>Carolina Gomes</strong><span class="role">Nutricionista</span></span></figcaption>
+        </figure></li>
+        <li><figure class="testimonial">
+          <div class="stars" role="img" aria-label="5 de 5 estrelas"><svg class="i i--fill"><use href="#i-star"/></svg><svg class="i i--fill"><use href="#i-star"/></svg><svg class="i i--fill"><use href="#i-star"/></svg><svg class="i i--fill"><use href="#i-star"/></svg><svg class="i i--fill"><use href="#i-star"/></svg></div>
+          <blockquote><p>“Conheci a Tati nas redes sociais e decidi tentar. Melhor decisão! Ela mudou minha vida e minha relação com exercício!”</p></blockquote>
+          <figcaption><span class="avatar" aria-hidden="true">RF</span><span><strong>Ricardo Ferreira</strong><span class="role">Gerente de Vendas</span></span></figcaption>
+        </figure></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="section" id="duvidas" aria-labelledby="duvidas-title">
+    <div class="container faq-layout">
+      <div class="section-head">
+        <p class="eyebrow reveal">Dúvidas frequentes</p>
+        <h2 class="title reveal" id="duvidas-title" style="--d:1">Antes de <em>começar.</em></h2>
+        <p class="lead reveal" style="--d:2">Não encontrou o que procurava? Me chame no WhatsApp — respondo pessoalmente.</p>
+        <a class="btn btn-outline reveal" style="--d:3" href="https://wa.me/5541997786117" data-wa="Olá, Tati! Tenho uma dúvida." data-cta="faq" target="_blank" rel="noopener">
+          <svg class="i i--fill" aria-hidden="true"><use href="#i-whatsapp"/></svg> Tirar uma dúvida
+        </a>
+      </div>
+      <div class="faq reveal" style="--d:1">
+        <details>
+          <summary>Onde acontecem as aulas? <svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+          <div class="answer"><p>No Studio Corpo e Mente em Sintonia, na Av. República Argentina, 2403, sala 13, Água Verde, Curitiba (PR). Também atendo a distância pela Consultoria Online.</p></div>
+        </details>
+        <details>
+          <summary>Nunca treinei ou estou parado há muito tempo. Posso começar? <svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+          <div class="answer"><p>Pode e deve. Tudo começa com uma avaliação física completa, e o programa é montado a partir do seu nível atual, com progressão segura.</p></div>
+        </details>
+        <details>
+          <summary>Como funciona a avaliação física? <svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+          <div class="answer"><p>Fazemos análise corporal, anamnese e conversamos sobre seus objetivos, rotina e limitações. Com isso, monto um plano personalizado e definimos as reavaliações.</p></div>
+        </details>
+        <details>
+          <summary>Você atende online? <svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+          <div class="answer"><p>Sim. Na Consultoria Online você recebe planos de treino personalizados, atualizações semanais e suporte por WhatsApp, onde estiver.</p></div>
+        </details>
+        <details>
+          <summary>Quais técnicas de massoterapia você oferece? <svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+          <div class="answer"><p>Liberação miofascial, massagem com pedras quentes, massagem relaxante e desportiva, moxabustão, Haihua (eletroestimulação), reflexologia e shiatsu.</p></div>
+        </details>
+        <details>
+          <summary>Qual o horário de atendimento e como agendar? <svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+          <div class="answer"><p>Atendo de segunda a sexta, das 9h às 20h. O agendamento é feito pelo WhatsApp (41) 99778-6117 ou pelo formulário logo abaixo.</p></div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTATO ============ -->
+  <section class="section section--dark contact" id="contato" aria-labelledby="contato-title">
+    <div class="container contact-grid">
+      <div>
+        <p class="eyebrow reveal">Contato</p>
+        <h2 class="title reveal" id="contato-title" style="--d:1">Sua transformação começa <em>com uma conversa.</em></h2>
+        <p class="lead reveal" style="--d:2">Agende sua avaliação e descubra o plano ideal para o seu corpo e a sua rotina.</p>
+
+        <ul class="contact-list reveal" style="--d:3" role="list">
+          <li><a class="contact-item" href="https://wa.me/5541997786117" data-wa="Olá, Tati! Vim pelo site e gostaria de mais informações." data-cta="contato-whatsapp" target="_blank" rel="noopener">
+            <span class="icon-wrap"><svg class="i i--fill" aria-hidden="true"><use href="#i-whatsapp"/></svg></span>
+            <span><small>WhatsApp</small><strong>(41) 99778-6117</strong></span>
+          </a></li>
+          <li><a class="contact-item" href="mailto:tati@personaltatiportela.com.br">
+            <span class="icon-wrap"><svg class="i" aria-hidden="true"><use href="#i-mail"/></svg></span>
+            <span><small>E-mail</small><strong>tati@personaltatiportela.com.br</strong></span>
+          </a></li>
+          <li><div class="contact-item">
+            <span class="icon-wrap"><svg class="i" aria-hidden="true"><use href="#i-pin"/></svg></span>
+            <span><small>Studio Corpo e Mente em Sintonia</small><strong>Av. República Argentina, 2403, sala 13 – Água Verde, Curitiba – PR, 80610-260</strong></span>
+          </div></li>
+          <li><div class="contact-item">
+            <span class="icon-wrap"><svg class="i" aria-hidden="true"><use href="#i-clock"/></svg></span>
+            <span><small>Horário</small><strong>Segunda a sexta, das 9h às 20h</strong></span>
+          </div></li>
+        </ul>
+
+        <div class="map reveal" data-map>
+          <button class="map-load" type="button" data-map-src="https://www.google.com/maps?q=Av.+Rep%C3%BAblica+Argentina,+2403,+%C3%81gua+Verde,+Curitiba+-+PR,+80610-260&amp;output=embed">
+            <span class="pin"><svg class="i" aria-hidden="true"><use href="#i-pin"/></svg></span>
+            Ver localização no mapa
+            <small>O mapa é carregado do Google Maps ao clicar</small>
+          </button>
+        </div>
+        <div class="map-links">
+          <a class="link-arrow" href="https://www.google.com/maps/dir/?api=1&amp;destination=Av.+Rep%C3%BAblica+Argentina,+2403,+Curitiba+-+PR" target="_blank" rel="noopener">Como chegar <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </div>
+
+        <ul class="socials" role="list">
+          <li><a href="https://instagram.com/personal.tatiportela" target="_blank" rel="noopener" aria-label="Instagram @personal.tatiportela"><svg class="i" aria-hidden="true"><use href="#i-instagram"/></svg></a></li>
+          <li><a href="https://facebook.com/corpomenteemsintonia" target="_blank" rel="noopener" aria-label="Facebook Corpo e Mente em Sintonia"><svg class="i" aria-hidden="true"><use href="#i-facebook"/></svg></a></li>
+          <li><a href="https://wa.me/5541997786117" data-wa="Olá, Tati! Vim pelo site e gostaria de mais informações." data-cta="social-whatsapp" target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="i i--fill" aria-hidden="true"><use href="#i-whatsapp"/></svg></a></li>
+        </ul>
+      </div>
+
+      <div class="form-card reveal" style="--d:2">
+        <h3>Agende sua avaliação</h3>
+        <p>Preencha em 30 segundos — sua mensagem chega pronta no meu WhatsApp.</p>
+        <form class="form" id="form-contato" novalidate>
+          <div class="field">
+            <label for="f-nome">Nome</label>
+            <input id="f-nome" name="nome" type="text" autocomplete="name" required minlength="2" aria-describedby="e-nome" placeholder="Como posso te chamar?">
+            <p class="field-error" id="e-nome" aria-live="polite"></p>
+          </div>
+          <div class="field field--half">
+            <label for="f-tel">WhatsApp</label>
+            <input id="f-tel" name="telefone" type="tel" inputmode="tel" autocomplete="tel" required aria-describedby="e-tel" placeholder="(41) 99999-9999">
+            <p class="field-error" id="e-tel" aria-live="polite"></p>
+          </div>
+          <div class="field field--half">
+            <label for="f-objetivo">Interesse</label>
+            <select id="f-objetivo" name="interesse" required aria-describedby="e-objetivo">
+              <option value="">Selecione</option>
+              <option>Personal Training Individual</option>
+              <option>Emagrecimento</option>
+              <option>Hipertrofia / Musculação</option>
+              <option>Protocolo GLP-1</option>
+              <option>Yoga</option>
+              <option>Pilates</option>
+              <option>Massoterapia</option>
+              <option>Consultoria Online</option>
+              <option>Treino em Grupo</option>
+              <option>Desafio 90 Dias</option>
+              <option>Gestantes / Pós-parto</option>
+              <option>Terceira Idade</option>
+              <option>Workshops e Palestras</option>
+              <option>Outro</option>
+            </select>
+            <p class="field-error" id="e-objetivo" aria-live="polite"></p>
+          </div>
+          <fieldset class="field">
+            <legend>Formato preferido</legend>
+            <div class="segmented">
+              <label><input type="radio" name="formato" value="Presencial (Studio)" checked> Presencial</label>
+              <label><input type="radio" name="formato" value="Online"> Online</label>
+            </div>
+          </fieldset>
+          <div class="field">
+            <label for="f-msg">Mensagem <span class="opt">(opcional)</span></label>
+            <textarea id="f-msg" name="mensagem" rows="3" placeholder="Conte um pouco sobre seu objetivo, rotina ou limitações"></textarea>
+          </div>
+          <button class="btn btn-primary btn-block" type="submit">
+            <svg class="i i--fill" aria-hidden="true"><use href="#i-whatsapp"/></svg> Enviar pelo WhatsApp
+          </button>
+          <p class="form-note"><svg class="i" aria-hidden="true"><use href="#i-lock"/></svg> Seus dados não ficam armazenados no site: eles só compõem a mensagem que você envia pelo WhatsApp.</p>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="#inicio" aria-label="Tati Portela – voltar ao início">
+          <svg class="brand-mark" aria-hidden="true"><use href="#logo"/></svg>
+          <span class="brand-text"><strong>Tati Portela</strong><small>Personal Trainer</small></span>
+        </a>
+        <p>Corpo e mente em sintonia. Transformando vidas através do treino desde 2008.</p>
+      </div>
+      <nav class="footer-col" aria-labelledby="ft-nav">
+        <h2 id="ft-nav">Navegação</h2>
+        <ul>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#treinos">Objetivos</a></li>
+          <li><a href="#protocolo">Protocolo GLP-1</a></li>
+          <li><a href="#depoimentos">Depoimentos</a></li>
+          <li><a href="#duvidas">Dúvidas</a></li>
+        </ul>
+      </nav>
+      <nav class="footer-col" aria-labelledby="ft-serv">
+        <h2 id="ft-serv">Serviços</h2>
+        <ul>
+          <li><a href="#servico-personal">Personal Training</a></li>
+          <li><a href="#servico-yoga">Yoga</a></li>
+          <li><a href="#servico-pilates">Pilates</a></li>
+          <li><a href="#servico-massoterapia">Massoterapia</a></li>
+          <li><a href="#servico-online">Consultoria Online</a></li>
+        </ul>
+      </nav>
+      <div class="footer-col">
+        <h2>Contato</h2>
+        <ul>
+          <li><a href="https://wa.me/5541997786117" data-wa="Olá, Tati! Vim pelo site e gostaria de mais informações." data-cta="footer" target="_blank" rel="noopener">(41) 99778-6117</a></li>
+          <li><a href="mailto:tati@personaltatiportela.com.br">E-mail</a></li>
+          <li><a href="https://instagram.com/personal.tatiportela" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://facebook.com/corpomenteemsintonia" target="_blank" rel="noopener">Facebook</a></li>
+        </ul>
+      </div>
     </div>
 
-    <main>
-        <div class="logo-wrap">
-            <img src="TP_logo.jpeg" alt="Logo Tati Portela">
-        </div>
+    <p class="footer-word" aria-hidden="true">Tati Portela</p>
 
-        <span class="badge-top"><i class="fas fa-medal"></i> +16 anos transformando vidas</span>
+    <div class="footer-bottom">
+      <p>© <span data-year>2026</span> Tati Portela · Personal Trainer · CREF 022922-G/PR</p>
+      <p><a href="privacidade.html">Política de privacidade</a> · <button type="button" data-consent-reset>Preferências de cookies</button></p>
+    </div>
+  </div>
+</footer>
 
-        <h1 class="title">Bem-vindo ao universo<br><em>Tati Portela</em></h1>
+<a class="wa-fab" href="https://wa.me/5541997786117" data-wa="Olá, Tati! Vim pelo site e gostaria de mais informações." data-cta="fab" target="_blank" rel="noopener" aria-label="Conversar com a Tati no WhatsApp" data-fab>
+  <svg class="i i--fill" aria-hidden="true"><use href="#i-whatsapp"/></svg><span>Fale comigo</span>
+</a>
 
-        <p class="tagline">
-            Personal Trainer, especialista em <strong>Yoga</strong>, <strong>Pilates</strong>, <strong>Massoterapia</strong>
-            e no novo <strong>Protocolo GLP-1</strong> (Mounjaro, Ozempic e Wegovy).
-            Treino, equilíbrio e resultado real.
-        </p>
+<div class="consent" role="region" aria-label="Aviso de cookies" data-consent hidden>
+  <strong>Sua privacidade importa</strong>
+  <p>Uso cookies de análise (Google Analytics) apenas para entender como o site é usado e melhorá-lo. Saiba mais na <a href="privacidade.html">política de privacidade</a>.</p>
+  <div class="consent-actions">
+    <button class="btn btn-outline" type="button" data-consent-choice="denied">Recusar</button>
+    <button class="btn btn-primary" type="button" data-consent-choice="granted">Aceitar</button>
+  </div>
+</div>
 
-        <div class="pillars" role="list">
-            <div class="pillar" role="listitem"><i class="fas fa-dumbbell"></i><span>Personal</span></div>
-            <div class="pillar" role="listitem"><i class="fas fa-spa"></i><span>Yoga &amp; Pilates</span></div>
-            <div class="pillar" role="listitem"><i class="fas fa-hands"></i><span>Massoterapia</span></div>
-            <div class="pillar" role="listitem"><i class="fas fa-syringe"></i><span>Protocolo GLP-1</span></div>
-        </div>
-
-        <div class="cta-row">
-            <a href="site.html" class="btn btn-primary"><i class="fas fa-rocket"></i> Entrar no Site</a>
-            <a href="https://api.whatsapp.com/send?phone=5541997786117&text=Ol%C3%A1%20Tati!%20Quero%20conhecer%20seus%20servi%C3%A7os." target="_blank" rel="noopener" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-            <a href="site.html#protocolo" class="btn btn-ghost"><i class="fas fa-syringe"></i> Protocolo GLP-1</a>
-        </div>
-
-        <div class="mini-stats">
-            <div class="stat"><strong>500+</strong><span>Alunos transformados</span></div>
-            <div class="stat"><strong>16+</strong><span>Anos de experiência</span></div>
-            <div class="stat"><strong>97%</strong><span>Satisfação</span></div>
-        </div>
-
-        <p class="cref-line">CREF 022922-G PR &nbsp;•&nbsp; Curitiba</p>
-
-        <div class="scroll-hint" aria-hidden="true">
-            Explore <i class="fas fa-chevron-down"></i>
-        </div>
-    </main>
+<script src="assets/js/main.js?v=20261024" defer></script>
 </body>
 </html>
