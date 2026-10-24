@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://personaltatiportela.com.br/sitemap.xml

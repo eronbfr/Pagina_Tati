@@ -1,53 +1,19 @@
-const CACHE_NAME = 'tati-fitness-v1';
-const urlsToCache = [
-    './app.html',
-    './app.css',
-    './app.js',
-    './manifest.json',
-    'https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap',
-    'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css'
-];
-
-self.addEventListener('install', event => {
-    event.waitUntil(
-        caches.open(CACHE_NAME)
-            .then(cache => cache.addAll(urlsToCache))
-            .then(() => self.skipWaiting())
-    );
+/*
+ * O antigo app (PWA) foi descontinuado. Este service worker substitui o anterior
+ * apenas para se autodesinstalar e limpar os caches que ele deixou nos navegadores
+ * de quem chegou a abrir o app — sem isso, essas pessoas continuariam vendo
+ * páginas antigas em cache. Pode ser removido depois de alguns meses.
+ */
+self.addEventListener('install', function () {
+  self.skipWaiting();
 });
 
-self.addEventListener('activate', event => {
-    event.waitUntil(
-        caches.keys().then(cacheNames => {
-            return Promise.all(
-                cacheNames
-                    .filter(name => name !== CACHE_NAME)
-                    .map(name => caches.delete(name))
-            );
-        }).then(() => self.clients.claim())
-    );
-});
-
-self.addEventListener('fetch', event => {
-    event.respondWith(
-        caches.match(event.request)
-            .then(response => {
-                if (response) return response;
-                return fetch(event.request).then(fetchResponse => {
-                    if (!fetchResponse || fetchResponse.status !== 200 || fetchResponse.type !== 'basic') {
-                        return fetchResponse;
-                    }
-                    const responseToCache = fetchResponse.clone();
-                    caches.open(CACHE_NAME).then(cache => {
-                        cache.put(event.request, responseToCache);
-                    });
-                    return fetchResponse;
-                });
-            })
-            .catch(() => {
-                if (event.request.destination === 'document') {
-                    return caches.match('./app.html');
-                }
-            })
-    );
+self.addEventListener('activate', function (event) {
+  event.waitUntil(
+    caches.keys()
+      .then(function (keys) { return Promise.all(keys.map(function (k) { return caches.delete(k); })); })
+      .then(function () { return self.registration.unregister(); })
+      .then(function () { return self.clients.matchAll({ type: 'window' }); })
+      .then(function (clients) { clients.forEach(function (c) { c.navigate(c.url); }); })
+  );
 });
