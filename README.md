@@ -8,10 +8,10 @@ Produção: <https://personaltatiportela.com.br/>
 ## Estrutura
 
 ```
-index.html            Página única (hero, sobre, serviços, objetivos, método, GLP-1, depoimentos, FAQ, contato)
+index.html            Página de boas-vindas (porta de entrada, com atalhos para cada especialidade)
+site.html             Site completo (hero, sobre, serviços, objetivos, método, GLP-1, depoimentos, FAQ, contato)
 privacidade.html      Política de privacidade (LGPD)
 404.html              Página de erro (usada automaticamente pelo GitHub Pages)
-site.html             Redireciona links antigos (site.html#secao → /#secao)
 sw.js                 Remove o service worker do antigo app dos navegadores que o instalaram
 robots.txt            Regras para buscadores
 sitemap.xml           Mapa do site
@@ -35,10 +35,11 @@ python3 -m http.server 8000
 | O quê | Onde |
 |---|---|
 | Número do WhatsApp | `assets/js/main.js` (`WHATSAPP`) e os `href="https://wa.me/..."` do `index.html` |
-| Mensagem pronta de cada botão | atributo `data-wa="..."` do link no `index.html` |
-| Textos, serviços, depoimentos e FAQ | `index.html` (o FAQ também está no bloco JSON-LD `FAQPage` no `<head>` — mantenha os dois iguais) |
-| Endereço, horário, e-mail e redes | seção `#contato`, rodapé e JSON-LD no `<head>` do `index.html` |
-| Cores, fontes e espaçamentos | variáveis em `:root` no início de `assets/css/styles.css` |
+| Mensagem pronta de cada botão | atributo `data-wa="..."` do link (`index.html` e `site.html`) |
+| Textos, serviços, depoimentos e FAQ | `site.html` (o FAQ também está no bloco JSON-LD `FAQPage` no `<head>` — mantenha os dois iguais) |
+| Página de boas-vindas | `index.html` |
+| Endereço, horário, e-mail e redes | seção `#contato`, rodapé e JSON-LD no `<head>` do `site.html` |
+| Cores, fontes e espaçamentos | variáveis em `:root` no início de `assets/css/styles.css` (tema claro) e nos blocos `[data-theme="dark"]` (tema escuro) — todas as seções seguem o tema escolhido |
 | Google Analytics | ID `G-W2JS8PE7WV` no `<head>` (só carrega no domínio oficial e só grava cookies após o aceite) |
 
 Ao trocar CSS/JS, atualize o parâmetro `?v=` nos `<link>`/`<script>` para evitar cache antigo.
