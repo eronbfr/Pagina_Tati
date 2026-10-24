@@ -77,6 +77,10 @@
   var menu = $('#menu');
   function setMenu(open) {
     document.body.classList.toggle('menu-open', open);
+    // Com o menu aberto, o restante da página fica inerte (foco e leitores de tela presos ao menu)
+    $all('body > main, body > footer, body > .wa-fab, body > .skip-link').forEach(function (el) {
+      el.inert = open;
+    });
     menuBtn.setAttribute('aria-expanded', String(open));
     menuBtn.setAttribute('aria-label', open ? 'Fechar menu' : 'Abrir menu');
     if (open) {
@@ -119,19 +123,38 @@
   }
 
   /* ---------- Animações de entrada ---------- */
-  var reveals = $all('.reveal');
-  if ('IntersectionObserver' in window && !reduceMotion) {
-    var io = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('is-visible');
-          io.unobserve(entry.target);
-        }
-      });
-    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
-    reveals.forEach(function (el) { io.observe(el); });
+  // Revela tudo o que já chegou à área visível OU ficou acima dela — assim nada fica oculto
+  // em rolagens rápidas, saltos por âncora (#contato) ou impressão.
+  var pending = $all('.reveal');
+  function revealCheck() {
+    if (!pending.length) return;
+    var limit = window.innerHeight * 0.92;
+    pending = pending.filter(function (el) {
+      if (el.getBoundingClientRect().top < limit) {
+        el.classList.add('is-visible');
+        return false;
+      }
+      return true;
+    });
+  }
+  if (reduceMotion) {
+    pending.forEach(function (el) { el.classList.add('is-visible'); });
+    pending = [];
   } else {
-    reveals.forEach(function (el) { el.classList.add('is-visible'); });
+    var revealTick = false;
+    var onRevealScroll = function () {
+      if (revealTick) return;
+      revealTick = true;
+      window.requestAnimationFrame(function () { revealTick = false; revealCheck(); });
+    };
+    window.addEventListener('scroll', onRevealScroll, { passive: true });
+    window.addEventListener('resize', onRevealScroll);
+    window.addEventListener('hashchange', revealCheck);
+    window.addEventListener('beforeprint', function () {
+      pending.forEach(function (el) { el.classList.add('is-visible'); });
+      pending = [];
+    });
+    revealCheck();
   }
 
   /* ---------- Contadores ---------- */
@@ -273,7 +296,11 @@
   var banner = $('[data-consent]');
   function showBanner() { if (banner) banner.hidden = false; }
   if (banner) {
-    if (!store('tp-consent')) showBanner();
+    // Aparece só depois das fontes carregarem: evita "pulo" de layout (CLS) dentro do aviso
+    if (!store('tp-consent')) {
+      var fontsReady = document.fonts && document.fonts.ready ? document.fonts.ready : Promise.resolve();
+      fontsReady.then(function () { setTimeout(showBanner, 400); });
+    }
     $all('[data-consent-choice]', banner).forEach(function (btn) {
       btn.addEventListener('click', function () {
         var choice = btn.getAttribute('data-consent-choice');
